@@ -38,7 +38,7 @@ use IEEE.NUMERIC_STD.ALL;
     );
  end entity rom_16_8;
  
- architecture RTL of rom_16_8 is
+ architecture Dataflow of rom_16_8 is
     type MEMORY_16_8 is array (0 to 15) of std_logic_vector(7 downto 0); -- Matrice 16x8
     
     constant ROM : MEMORY_16_8 := ( -- ROM content
@@ -47,17 +47,17 @@ use IEEE.NUMERIC_STD.ALL;
         x"3C",
         x"4D",
         x"5E",
-        x"5F",
-        x"61",
-        x"72",
-        x"83",
-        x"94",
-        x"A5",
-        x"B6",
-        x"C7",
-        x"D8",
-        x"E9",
-        x"FA"
+        x"6F",
+        x"71",
+        x"82",
+        x"93",
+        x"A4",
+        x"B5",
+        x"C6",
+        x"D7",
+        x"E8",
+        x"F9",
+        x"3A"
     );
     
  begin
@@ -66,4 +66,4 @@ use IEEE.NUMERIC_STD.ALL;
         dout <= ROM(to_integer(unsigned(address))); -- Casting da unsigned a intero
     end process;
     
- end architecture RTL;
+ end architecture Dataflow;
