@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Mar 20 13:53:15 2025
+# Process ID         : 53335
+# Current directory  : /home/cesare/ASDI/1/1.2/project_1.2/project_1.2.runs/synth_1
+# Command line       : vivado -log net_16_4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source net_16_4.tcl
+# Log file           : /home/cesare/ASDI/1/1.2/project_1.2/project_1.2.runs/synth_1/net_16_4.vds
+# Journal file       : /home/cesare/ASDI/1/1.2/project_1.2/project_1.2.runs/synth_1/vivado.jou
+# Running On         : cesare-desktop
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor
+# CPU Frequency      : 4448.617 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 32792 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41382 MB
+# Available Virtual  : 32048 MB
+#-----------------------------------------------------------
+source net_16_4.tcl -notrace

@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Mar 21 12:06:19 2025
+# Process ID         : 14184
+# Current directory  : /home/cesare/ASDI/1/1.3
+# Command line       : vivado .
+# Log file           : /home/cesare/ASDI/1/1.3/vivado.log
+# Journal file       : /home/cesare/ASDI/1/1.3/vivado.jou
+# Running On         : cesare-desktop
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor
+# CPU Frequency      : 5029.996 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 32792 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41382 MB
+# Available Virtual  : 34176 MB
+#-----------------------------------------------------------
+start_gui
+create_project project_1.3 /home/cesare/ASDI/1/1.3/project_1.3 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+set_property board_part digilentinc.com:nexys-a7-100t:part0:1.3 [current_project]
+add_files -fileset constrs_1 -norecurse /home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 21 14:01:25 2025...

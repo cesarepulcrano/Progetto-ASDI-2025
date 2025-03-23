@@ -1,0 +1,158 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Mar 21 14:02:07 2025
+# Process ID         : 24963
+# Current directory  : /home/cesare/ASDI/1/1.2/project_1.2
+# Command line       : vivado project_1.2.xpr
+# Log file           : /home/cesare/ASDI/1/1.2/project_1.2/vivado.log
+# Journal file       : /home/cesare/ASDI/1/1.2/project_1.2/vivado.jou
+# Running On         : cesare-desktop
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor
+# CPU Frequency      : 4339.512 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 32792 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41382 MB
+# Available Virtual  : 34078 MB
+#-----------------------------------------------------------
+start_gui
+open_project project_1.2.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/cesare/ASDI/1/1.2/project_1.2/project_1.2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: net_16_4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25086
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 8216.059 ; gain = 417.859 ; free physical = 16849 ; free virtual = 31064
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'net_16_4' [/home/cesare/ASDI/1/1.2/project_1.2/project_1.2.srcs/sources_1/new/net_16_4.vhd:42]
+INFO: [Synth 8-3491] module 'mux_16_1' declared at '/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_16_1.vhd:34' bound to instance 'mux0' of component 'mux_16_1' [/home/cesare/ASDI/1/1.2/project_1.2/project_1.2.srcs/sources_1/new/net_16_4.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mux_16_1' [/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_16_1.vhd:45]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at '/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_4_1.vhd:34' bound to instance 'mux0' of component 'mux_4_1' [/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_16_1.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'mux_4_1' [/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_4_1.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_1' (0#1) [/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_4_1.vhd:46]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at '/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_4_1.vhd:34' bound to instance 'mux1' of component 'mux_4_1' [/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_16_1.vhd:75]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at '/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_4_1.vhd:34' bound to instance 'mux2' of component 'mux_4_1' [/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_16_1.vhd:85]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at '/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_4_1.vhd:34' bound to instance 'mux3' of component 'mux_4_1' [/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_16_1.vhd:95]
+INFO: [Synth 8-3491] module 'mux_4_1' declared at '/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_4_1.vhd:34' bound to instance 'mux4' of component 'mux_4_1' [/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_16_1.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'mux_16_1' (0#1) [/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_16_1.vhd:45]
+INFO: [Synth 8-3491] module 'demux_1_4' declared at '/home/cesare/ASDI/1/1.2/project_1.2/project_1.2.srcs/sources_1/new/demux_1_4.vhd:34' bound to instance 'demux0' of component 'demux_1_4' [/home/cesare/ASDI/1/1.2/project_1.2/project_1.2.srcs/sources_1/new/net_16_4.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'demux_1_4' [/home/cesare/ASDI/1/1.2/project_1.2/project_1.2.srcs/sources_1/new/demux_1_4.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'demux_1_4' (0#1) [/home/cesare/ASDI/1/1.2/project_1.2/project_1.2.srcs/sources_1/new/demux_1_4.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'net_16_4' (0#1) [/home/cesare/ASDI/1/1.2/project_1.2/project_1.2.srcs/sources_1/new/net_16_4.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8286.996 ; gain = 488.797 ; free physical = 16771 ; free virtual = 30986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8301.840 ; gain = 503.641 ; free physical = 16771 ; free virtual = 30986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8301.840 ; gain = 503.641 ; free physical = 16771 ; free virtual = 30986
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8301.848 ; gain = 0.000 ; free physical = 16771 ; free virtual = 30986
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:8]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK100MHZ]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:8]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/cesare/ASDI/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8416.613 ; gain = 0.000 ; free physical = 16745 ; free virtual = 30959
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 8621.332 ; gain = 823.133 ; free physical = 16531 ; free virtual = 30745
+21 Infos, 22 Warnings, 22 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 8621.332 ; gain = 973.297 ; free physical = 16531 ; free virtual = 30745
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2181.004; main = 2181.004; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 8621.336; main = 8621.336; forked = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 21 14:32:09 2025...

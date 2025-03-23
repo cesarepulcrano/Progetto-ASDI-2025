@@ -1,0 +1,265 @@
+/*
+
+AMD Vivado v2024.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 5239630 on Fri Nov 08 22:34:34 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+Process ID (PID): 4804
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Mar 23 16:51:54 CET 2025
+Time zone: 	Central European Standard Time (Europe/Rome)
+
+OS: Ubuntu
+OS Version: 6.11.0-19-generic
+OS Architecture: amd64
+Available processors (cores): 12
+LSB Release Description: Ubuntu 24.04.2 LTS
+
+Display: 1
+Screen size: 2560x1440
+Local screen bounds: x = 66, y = 32, width = 2494, height = 1408
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	cesare
+User home directory: /home/cesare
+User working directory: /home/cesare/ASDI/1/1.1/mux_16_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2024.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.2/bin
+
+Vivado preferences file: /home/cesare/.Xilinx/Vivado/2024.2/vivado.xml
+Vivado preferences directory: /home/cesare/.Xilinx/Vivado/2024.2/
+Vivado layouts directory: /home/cesare/.Xilinx/Vivado/2024.2/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/cesare/ASDI/1/1.1/mux_16_1/vivado.log
+Vivado journal file: 	/home/cesare/ASDI/1/1.1/mux_16_1/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-4804-cesare-desktop
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/Vivado/2024.2/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Ubuntu/24:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2024.2/bin:/tools/Xilinx/Vivado/2024.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/cesare/ASDI/1/1.1/mux_16_1:cesare-desktop_1742745104_4735
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.2/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.2/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis/2024.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.2
+XILINX_SDK: /tools/Xilinx/Vitis/2024.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2024.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,576 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: mux_16_1.xpr. Version: Vivado v2024.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 118 MB (+121579kb) [00:00:04]
+// [Engine Memory]: 1,534 MB (+1456937kb) [00:00:04]
+// [GUI Memory]: 135 MB (+11392kb) [00:00:04]
+// Tcl Message: open_project mux_16_1.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'. 
+// Project name: mux_16_1; location: /home/cesare/ASDI/1/1.1/mux_16_1; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bh (Open Project Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,587 MB. GUI used memory: 69 MB. Current time: 3/23/25, 4:51:55 PM CET
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux_16_1_tb(behavioral) (mux_16_1_tb.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+// [GUI Memory]: 143 MB (+1348kb) [00:00:13]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux_16_1_tb(behavioral) (mux_16_1_tb.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux_16_1_tb(behavioral) (mux_16_1_tb.vhd), uut : mux_16_1(Structural) (mux_16_1.vhd)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux_16_1_tb(behavioral) (mux_16_1_tb.vhd), uut : mux_16_1(Structural) (mux_16_1.vhd)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux_16_1_tb(behavioral) (mux_16_1_tb.vhd), uut : mux_16_1(Structural) (mux_16_1.vhd), mux0 : mux_4_1(Dataflow) (mux_4_1.vhd)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mux_16_1_tb(behavioral) (mux_16_1_tb.vhd), uut : mux_16_1(Structural) (mux_16_1.vhd), mux0 : mux_4_1(Dataflow) (mux_4_1.vhd)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// [Engine Memory]: 1,700 MB (+93530kb) [00:00:15]
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux_16_1.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux_4_1.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 47 seconds
+selectCodeEditor("mux_4_1.vhd", 115, 330); // ae (mux_4_1.vhd)
+selectCodeEditor("mux_4_1.vhd", 120, 358); // ae (mux_4_1.vhd)
+selectCodeEditor("mux_4_1.vhd", 119, 381); // ae (mux_4_1.vhd)
+selectCodeEditor("mux_4_1.vhd", 119, 415); // ae (mux_4_1.vhd)
+selectCodeEditor("mux_4_1.vhd", 120, 447); // ae (mux_4_1.vhd)
+selectCodeEditor("mux_4_1.vhd", 120, 481); // ae (mux_4_1.vhd)
+// Elapsed time: 16 seconds
+selectCodeEditor("mux_4_1.vhd", 148, 724); // ae (mux_4_1.vhd)
+// Elapsed time: 38 seconds
+selectCodeEditor("mux_4_1.vhd", 345, 731); // ae (mux_4_1.vhd)
+selectCodeEditor("mux_4_1.vhd", 517, 741); // ae (mux_4_1.vhd)
+selectCodeEditor("mux_4_1.vhd", 687, 743); // ae (mux_4_1.vhd)
+selectCodeEditor("mux_4_1.vhd", 730, 739); // ae (mux_4_1.vhd)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Run Linter]", 12, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// TclEventType: MSGMGR_REFRESH_MSG
+// Tcl Message: synth_design -top mux_16_1_tb -part xc7a100tcsg324-1 -lint  
+// Tcl Message: Command: synth_design -top mux_16_1_tb -part xc7a100tcsg324-1 -lint Starting synth_design Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t' 
+// Tcl Message: INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t' INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes. INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes INFO: [Synth 8-7075] Helper process launched with PID 5258 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel", "Run Linter"); // a (RDIResource.ProgressDialog_CANCEL)
+// TclEventType: ELABORATE_FAIL
+// TclEventType: LINTER_RUN
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. INFO: [Common 17-344] 'source' was cancelled INFO: [Common 17-83] Releasing license: Synthesis 
+// Tcl Message: 7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: INFO: [Common 17-344] 'synth_design' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// HOptionPane Error: 'Run Linter Failed. Check Messages for details. (Run Linter Failed)'
+selectButton("OptionPane.button", "OK", "Run Linter Failed"); // JButton (OptionPane.button)
+// [Engine Memory]: 2,068 MB (+297111kb) [00:02:56]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: mux_16_1_tb 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,240 MB. GUI used memory: 82 MB. Current time: 3/23/25, 4:54:45 PM CET
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes. 
+// Tcl Message: invalid command name "NULL" 
+// Tcl Message: 2 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// [Engine Memory]: 2,335 MB (+171199kb) [00:02:59]
+dismissDialog("Open Elaborated Design"); // bh (Open Elaborated Design Progress)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // J (dialog0)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aa
+// [GUI Memory]: 159 MB (+8560kb) [00:03:05]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // g (dialog1)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// Tcl Message: [Sun Mar 23 16:54:54 2025] Launched impl_1... Run output will be captured here: /home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectButton(RDIResource.BaseDialog_OK, "OK", "Implementation Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // W.a (dialog2)
+selectCodeEditor("mux_4_1.vhd", 205, 492); // ae (mux_4_1.vhd)
+selectCodeEditor("mux_4_1.vhd", 450, 758); // ae (mux_4_1.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux_16_1.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux_16_1_tb.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 24, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_NO, "No", "No Implementation Results Available"); // a (RDIResource.BaseDialog_NO)
+dismissDialog("No Implementation Results Available"); // u (dialog3)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+selectButton(RDIResource.BaseDialog_YES, "Reset and Re-run", "Reset and Re-run"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("Reset and Re-run"); // g (dialog4)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // g (dialog5)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// Tcl Message: [Sun Mar 23 16:55:23 2025] Launched impl_1... Run output will be captured here: /home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux_16_1.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectButton(RDIResource.BaseDialog_OK, "OK", "Implementation Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // W.a (dialog6)
+selectCodeEditor("mux_16_1.vhd", 111, 213); // ae (mux_16_1.vhd)
+selectCodeEditor("mux_16_1.vhd", 55, 340); // ae (mux_16_1.vhd)
+selectCodeEditor("mux_16_1.vhd", 21, 469); // ae (mux_16_1.vhd)
+// Elapsed time: 12 seconds
+selectCodeEditor("mux_16_1.vhd", 397, 335); // ae (mux_16_1.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mux_16_1.vhd", 698, 362); // ae (mux_16_1.vhd)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 04m:12s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,351 MB. GUI used memory: 84 MB. Current time: 3/23/25, 4:56:05 PM CET
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 04m:14s
