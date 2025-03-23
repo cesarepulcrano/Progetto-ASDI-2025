@@ -44,6 +44,7 @@ architecture Behavioral of demux_1_4 is
     begin
         process(x,s1,s0)
             begin 
+            	y<="0000"
                 if(s1='0' and s0 = '0') then
                     y(0)<=x;
                 elsif(s1='0' and s0 = '1') then
