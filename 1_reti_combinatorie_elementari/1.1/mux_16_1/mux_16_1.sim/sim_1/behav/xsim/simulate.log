@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-Failure: error
-Time: 300 ns  Iteration: 0  Process: /mux_16_1_tb/stim_proc  File: /home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_16_1_tb.vhd
-$finish called at time : 300 ns : File "/home/cesare/ASDI/1/1.1/mux_16_1/mux_16_1.srcs/sources_1.1/new/mux_16_1_tb.vhd" Line 90

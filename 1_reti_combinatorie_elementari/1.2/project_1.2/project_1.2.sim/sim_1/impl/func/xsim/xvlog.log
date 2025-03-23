@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/cesare/ASDI/1/1.2/project_1.2/project_1.2.sim/sim_1/impl/func/xsim/net_16_4_tb_func_impl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module demux_1_4
-INFO: [VRFC 10-311] analyzing module net_16_4
-INFO: [VRFC 10-311] analyzing module glbl

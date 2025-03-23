@@ -1,6 +1,0 @@
-Time resolution is 1 ps
-Error: Assertion violation
-Time: 60 ns  Iteration: 0  Process: /net_16_4_tb/stim_proc  File: /home/cesare/ASDI/1/1.2/project_1.2/project_1.2.srcs/sim_1/new/net_16_4_tb.vhd
-Failure: errore
-Time: 60 ns  Iteration: 0  Process: /net_16_4_tb/stim_proc  File: /home/cesare/ASDI/1/1.2/project_1.2/project_1.2.srcs/sim_1/new/net_16_4_tb.vhd
-$finish called at time : 60 ns : File "/home/cesare/ASDI/1/1.2/project_1.2/project_1.2.srcs/sim_1/new/net_16_4_tb.vhd" Line 84
