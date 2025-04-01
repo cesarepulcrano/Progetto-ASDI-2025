@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Mar 31 11:19:44 2025
+# Process ID         : 10157
+# Current directory  : /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari
+# Command line       : vivado
+# Log file           : /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/vivado.log
+# Journal file       : /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/vivado.jou
+# Running On         : cesare-desktop
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor
+# CPU Frequency      : 4359.377 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 32792 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41382 MB
+# Available Virtual  : 37461 MB
+#-----------------------------------------------------------
+start_gui
+create_project project_3.1 /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.1/Progetto/project_3.1 -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:arty-a7-100:part0:1.1 [current_project]
+close [ open /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.1/Codice/riconoscitore_101.vhd w ]
+add_files /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.1/Codice/riconoscitore_101.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
