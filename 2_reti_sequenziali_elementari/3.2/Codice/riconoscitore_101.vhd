@@ -42,7 +42,7 @@ end riconoscitore_101;
 
 architecture Behavioral of riconoscitore_101 is
     --da S0 a S4 stati automa 1(m=0, non sovrapposto)
-    --da S5 a S7 stati automa 1(m=1,parzialmente sovrapposto)
+    --da S5 a S7 stati automa 1(m=1, parzialmente sovrapposto)
     type    stato is (S0,S1,S2,S3,S4,S5,S6,S7);
     signal  stato_corrente  :   stato   :=S0;
     signal  stato_prossimo  :   stato;
@@ -156,7 +156,8 @@ begin
         begin   
             if(reset = '1') then
                 stato_corrente<=S0;
-            elsif(a'event and a='1') then
+            -- elsif(a'event and a='1') then
+            elsif(rising_edge(a)) then
                 stato_corrente<=stato_prossimo;
             end if;
     end process;

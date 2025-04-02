@@ -36,7 +36,7 @@ entity riconoscitore_101_fpga is
             SW_mode :   in std_logic;
             BTN_in  :   in std_logic;
             BTN_mode    :   in std_logic;
-            CLK    :   in  std_logic; -- segnale ti tempificazione(clock)
+            CLK    :   in  std_logic; -- segnale di tempificazione (clock)
             RST   :   in  std_logic;
             LED_out  :   out std_logic
     );
@@ -48,9 +48,9 @@ architecture Structural of riconoscitore_101_fpga is
 
     component riconoscitore_101
         Port(   input   :   in  std_logic;
-                a       :   in  std_logic; -- segnale ti tempificazione(clock)
+                a       :   in  std_logic; -- segnale di tempificazione (clock)
                 reset   :   in  std_logic;
-                m       :   in  std_logic; --0 modalità non sovrapposta, 1 modalità parzialmente sovrapposta
+                m       :   in  std_logic; -- 0 modalità non sovrapposta, 1 modalità parzialmente sovrapposta
                 output  :   out std_logic
                 
         );
@@ -68,18 +68,20 @@ begin
     
     button_input:   switch_capture
         Port map(   clock=>CLK,
-                    button=>BTN_in,
-                    input=>SW_in,
+                    button=>BTN_in, -- BTNL
+                    input=>SW_in, -- primo switch
                     output=>input_signal
         
         );
+        
     button_mode:   switch_capture
         Port map(   clock=>CLK,
-                    button=>BTN_mode,
-                    input=>SW_mode,
+                    button=>BTN_mode, -- BTNR
+                    input=>SW_mode, -- secondo switch
                     output=>mode_signal
         
         );
+        
     riconoscitore: riconoscitore_101
         port map(
                 input=> input_signal, 

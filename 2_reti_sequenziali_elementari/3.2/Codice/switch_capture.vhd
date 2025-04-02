@@ -43,12 +43,10 @@ architecture Behavioral of switch_capture is
 
 begin
 
-    capture: process(clock)
+    capture: process(clock, button, input)
         begin
-            
             if(rising_edge(clock))  then
                 if(button='1')      then
-                
                     output<=input;
                end if;
             end if;     
