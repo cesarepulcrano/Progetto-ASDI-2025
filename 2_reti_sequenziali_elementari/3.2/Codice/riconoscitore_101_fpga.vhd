@@ -64,23 +64,47 @@ architecture Structural of riconoscitore_101_fpga is
         );
     end component;   
     
-begin
+    component ButtonDebouncer is
+        generic (                       
+            CLK_period: integer := 10;  -- periodo del clock (della board) in nanosecondi
+            btn_noise_time: integer := 10000000 -- durata stimata dell'oscillazione del bottone in nanosecondi
+                                                -- il valore di default � 10 millisecondi
+        );
+        Port ( RST : in STD_LOGIC;
+               CLK : in STD_LOGIC;
+               BTN : in STD_LOGIC;
+               CLEARED_BTN : out STD_LOGIC);
+    end component;
     
-    button_input:   switch_capture
-        Port map(   clock=>CLK,
-                    button=>BTN_in, -- BTNL
-                    input=>SW_in, -- primo switch
-                    output=>input_signal
-        
+begin
+
+    button_input : ButtonDebouncer
+        Port map(RST => RST,
+                CLK => CLK,
+                BTN => BTN_in,
+                CLEARED_BTN => input_signal
         );
         
-    button_mode:   switch_capture
-        Port map(   clock=>CLK,
-                    button=>BTN_mode, -- BTNR
-                    input=>SW_mode, -- secondo switch
-                    output=>mode_signal
-        
+    button_mode : ButtonDebouncer
+        Port map(RST => RST,
+                CLK => CLK,
+                BTN => BTN_mode,
+                CLEARED_BTN => mode_signal
         );
+    
+    --button_input:   switch_capture
+      --  Port map(   clock=>CLK,
+        --            button=>BTN_in, -- BTNL
+          --          input=>SW_in, -- primo switch
+            --        output=>input_signal
+     --   );
+        
+    --button_mode:   switch_capture
+    --    Port map(   clock=>CLK,
+     --               button=>BTN_mode, -- BTNR
+     --               input=>SW_mode, -- secondo switch
+     --               output=>mode_signal   
+      --  );
         
     riconoscitore: riconoscitore_101
         port map(
