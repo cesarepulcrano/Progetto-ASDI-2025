@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 04/01/2025 02:08:45 PM
+-- Create Date: 04/18/2025 12:41:56 PM
 -- Design Name: 
--- Module Name: switch_caputure - Behavioral
+-- Module Name: and_gate - Dataflow
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,24 +31,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity switch_capture is
-    Port (  clock   :   in std_logic;
-            button  :   in  std_logic;
-            input   :   in std_logic;
-            output  :   out std_logic
-    );
-end switch_capture;
+entity and_gate is
+    Port ( a: in std_logic; b: in std_logic; y: out std_logic);
+end and_gate;
 
-architecture Behavioral of switch_capture is
-
+architecture Dataflow of and_gate is
+   
 begin
 
-    capture: process(clock, button, input)
-        begin
-            if(rising_edge(clock))  then
-                if(button='1')      then
-                    output<=input;
-               end if;
-            end if;     
-    end process;
-end Behavioral;
+ y<=a AND b;
+end Dataflow;

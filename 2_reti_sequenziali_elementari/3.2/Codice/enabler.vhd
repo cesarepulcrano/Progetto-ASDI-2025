@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 04/01/2025 02:08:45 PM
+-- Create Date: 04/07/2025 12:50:54 PM
 -- Design Name: 
--- Module Name: switch_caputure - Behavioral
+-- Module Name: enabler - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,24 +31,32 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity switch_capture is
-    Port (  clock   :   in std_logic;
-            button  :   in  std_logic;
-            input   :   in std_logic;
+entity enabler is
+    Port (  clock : in std_logic;
+            input: in std_logic;
+            mode: in std_logic;
+            enable  :   in std_logic;
             output  :   out std_logic
-    );
-end switch_capture;
+    
+     );
+end enabler;
 
-architecture Behavioral of switch_capture is
-
+architecture Behavioral of enabler is
+    
+    
+    
 begin
-
-    capture: process(clock, button, input)
+    
+    process(clock,enable)
         begin
-            if(rising_edge(clock))  then
-                if(button='1')      then
-                    output<=input;
-               end if;
-            end if;     
-    end process;
+            if(rising_edge(clock)) then
+                if (enable='1') then
+                    output<=enable;
+                    
+                end if;
+            end if;
+            
+        end process;
+        
+
 end Behavioral;

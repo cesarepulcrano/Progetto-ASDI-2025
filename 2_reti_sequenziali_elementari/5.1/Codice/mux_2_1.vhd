@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 04/01/2025 02:08:45 PM
+-- Create Date: 08.04.2025 14:09:02
 -- Design Name: 
--- Module Name: switch_caputure - Behavioral
+-- Module Name: mux_2_1 - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,24 +31,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity switch_capture is
-    Port (  clock   :   in std_logic;
-            button  :   in  std_logic;
-            input   :   in std_logic;
-            output  :   out std_logic
+entity mux_2_1 is
+    Port (  x : in std_logic_vector(1 downto 0);
+            s : in std_logic;
+            y : out std_logic
     );
-end switch_capture;
+end mux_2_1;
 
-architecture Behavioral of switch_capture is
+architecture Dataflow of mux_2_1 is
 
 begin
 
-    capture: process(clock, button, input)
-        begin
-            if(rising_edge(clock))  then
-                if(button='1')      then
-                    output<=input;
-               end if;
-            end if;     
-    end process;
-end Behavioral;
+    y <= (x(0) AND (NOT s)) OR (x(1) AND s);
+
+end Dataflow;

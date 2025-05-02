@@ -1,0 +1,499 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Apr  2 12:55:49 2025
+# Process ID         : 24323
+# Current directory  : /home/cesare/Uni/Progetto-ASDI-2025/test+
+# Command line       : vivado
+# Log file           : /home/cesare/Uni/Progetto-ASDI-2025/test+/vivado.log
+# Journal file       : /home/cesare/Uni/Progetto-ASDI-2025/test+/vivado.jou
+# Running On         : cesare-desktop
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor
+# CPU Frequency      : 5175.286 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 32792 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41382 MB
+# Available Virtual  : 33690 MB
+#-----------------------------------------------------------
+start_gui
+create_project project_1 . -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+set_property board_part digilentinc.com:nexys-a7-100t:part0:1.3 [current_project]
+set_property target_language VHDL [current_project]
+add_files {/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd}
+add_files -fileset constrs_1 -norecurse /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new
+close [ open /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd w ]
+add_files /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Apr  2 13:04:44 2025] Launched synth_1...
+Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.runs/synth_1/runme.log
+[Wed Apr  2 13:04:44 2025] Launched impl_1...
+Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8195.457 ; gain = 0.000 ; free physical = 19474 ; free virtual = 33476
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8262.332 ; gain = 0.000 ; free physical = 19498 ; free virtual = 33500
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8815.469 ; gain = 0.000 ; free physical = 18955 ; free virtual = 32957
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8815.469 ; gain = 0.000 ; free physical = 18947 ; free virtual = 32949
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8815.469 ; gain = 0.000 ; free physical = 18947 ; free virtual = 32949
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8815.469 ; gain = 0.000 ; free physical = 18947 ; free virtual = 32949
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8815.469 ; gain = 0.000 ; free physical = 18947 ; free virtual = 32949
+Read Physdb Files: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8815.469 ; gain = 0.000 ; free physical = 18947 ; free virtual = 32949
+Restored from archive | CPU: 0.020000 secs | Memory: 0.045639 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8815.469 ; gain = 0.000 ; free physical = 18947 ; free virtual = 32949
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8815.469 ; gain = 0.000 ; free physical = 18947 ; free virtual = 32949
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 9111.066 ; gain = 1098.836 ; free physical = 18661 ; free virtual = 32663
+open_hw_manager
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: riconoscitore_101_fpga
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 29156
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 9530.766 ; gain = 412.766 ; free physical = 17866 ; free virtual = 31868
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'riconoscitore_101_fpga' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:45]
+INFO: [Synth 8-3491] module 'switch_capture' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:34' bound to instance 'button_input' of component 'switch_capture' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'switch_capture' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'switch_capture' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:42]
+INFO: [Synth 8-3491] module 'switch_capture' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:34' bound to instance 'button_mode' of component 'switch_capture' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:77]
+INFO: [Synth 8-3491] module 'riconoscitore_101' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:34' bound to instance 'riconoscitore' of component 'riconoscitore_101' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'riconoscitore_101' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'riconoscitore_101' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'riconoscitore_101_fpga' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 9599.734 ; gain = 481.734 ; free physical = 17793 ; free virtual = 31797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 9599.734 ; gain = 481.734 ; free physical = 17777 ; free virtual = 31781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 9599.734 ; gain = 481.734 ; free physical = 17777 ; free virtual = 31781
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9599.742 ; gain = 0.000 ; free physical = 17777 ; free virtual = 31781
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 9646.180 ; gain = 0.000 ; free physical = 17809 ; free virtual = 31812
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 9670.191 ; gain = 552.191 ; free physical = 17650 ; free virtual = 31654
+14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+remove_files  /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+reset_run synth_1
+INFO: [Project 1-1160] Copying file /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.runs/synth_1/riconoscitore_101_fpga.dcp to /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Apr  2 13:08:59 2025] Launched synth_1...
+Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.runs/synth_1/runme.log
+[Wed Apr  2 13:08:59 2025] Launched impl_1...
+Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+remove_files  /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd w ]
+add_files /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Apr  2 13:48:20 2025] Launched synth_1...
+Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.runs/synth_1/runme.log
+[Wed Apr  2 13:48:21 2025] Launched impl_1...
+Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.runs/impl_1/runme.log
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 10510.195 ; gain = 81.844 ; free physical = 16801 ; free virtual = 30832
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2716] syntax error near 'begin' [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:49]
+INFO: [Synth 8-11252] unit 'behavioral' is ignored due to previous errors [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:61]
+INFO: [Synth 8-10443] VHDL file '/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd' is ignored due to errors
+ERROR: [Synth 8-12189] Failed to read vhdl '/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd'
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 10586.164 ; gain = 157.812 ; free physical = 16604 ; free virtual = 30635
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Apr  2 13:49:34 2025] Launched synth_1...
+Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.runs/synth_1/runme.log
+[Wed Apr  2 13:49:34 2025] Launched impl_1...
+Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.runs/impl_1/runme.log
+refresh_design
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 10610.105 ; gain = 13.941 ; free physical = 16388 ; free virtual = 30423
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'button_test' [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:42]
+INFO: [Synth 8-3491] module 'switch_capture' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:34' bound to instance 'button' of component 'switch_capture' [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'switch_capture' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'switch_capture' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'button_test' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 10620.105 ; gain = 23.941 ; free physical = 16522 ; free virtual = 30558
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 10637.918 ; gain = 41.754 ; free physical = 16522 ; free virtual = 30558
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 10637.918 ; gain = 41.754 ; free physical = 16521 ; free virtual = 30556
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 10637.918 ; gain = 0.000 ; free physical = 16534 ; free virtual = 30569
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW_mode'. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RST'. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTN_mode'. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/Nexys-A7-100T-Master.xdc]
+Completed Processing XDC Constraints
+
+remove_files  /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/test_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/switch_capture.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/3.2/Codice/riconoscitore_101.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/test+/project_1.srcs/sources_1/new/button_test.vhd:]

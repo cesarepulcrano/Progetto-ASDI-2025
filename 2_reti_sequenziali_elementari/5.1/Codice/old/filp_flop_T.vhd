@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 04/01/2025 02:08:45 PM
+-- Create Date: 04/09/2025 02:47:09 PM
 -- Design Name: 
--- Module Name: switch_caputure - Behavioral
+-- Module Name: filp_flop_jk - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,24 +31,27 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity switch_capture is
-    Port (  clock   :   in std_logic;
-            button  :   in  std_logic;
-            input   :   in std_logic;
-            output  :   out std_logic
+entity flip_flop_T is
+    Port (  clock   :   in  std_logic;
+            reset   :   in  std_logic;
+            y   :   out std_logic
+            
     );
-end switch_capture;
+end flip_flop_T;
 
-architecture Behavioral of switch_capture is
-
-begin
-
-    capture: process(clock, button, input)
-        begin
-            if(rising_edge(clock))  then
-                if(button='1')      then
-                    output<=input;
-               end if;
-            end if;     
-    end process;
+architecture Behavioral of flip_flop_T is
+    signal TY:  std_logic;
+    
+    begin
+        
+        process(clock,reset)
+            begin
+                if(reset='1')   then
+                    TY<='0';
+                elsif(clock'event AND clock='1') then
+                    TY<=not TY;
+                end if;    
+                
+        end process;
+    y<=TY;
 end Behavioral;

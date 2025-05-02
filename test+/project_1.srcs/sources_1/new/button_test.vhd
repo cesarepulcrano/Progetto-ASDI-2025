@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 04/01/2025 02:08:45 PM
+-- Create Date: 04/02/2025 01:42:40 PM
 -- Design Name: 
--- Module Name: switch_caputure - Behavioral
+-- Module Name: button_test - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,24 +31,32 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity switch_capture is
-    Port (  clock   :   in std_logic;
-            button  :   in  std_logic;
-            input   :   in std_logic;
-            output  :   out std_logic
+entity button_test is
+    Port (  SW_in : in std_logic;
+            BTN_in :    in std_logic;
+            CLK:    in std_logic;
+            LED_out : out std_logic
+     );
+end button_test;
+
+architecture Behavioral of button_test is
+    component switch_capture
+        Port (   clock   :   in std_logic;
+                 button  :   in  std_logic;
+                 input : in std_logic;
+                 output  :   out std_logic
     );
-end switch_capture;
-
-architecture Behavioral of switch_capture is
-
+    end component;
 begin
+    
+    button: switch_capture
+        port map(
+                    clock=>CLK,
+                    button=>BTN_in,
+                    input=>SW_in,
+                    output=>LED_out
 
-    capture: process(clock, button, input)
-        begin
-            if(rising_edge(clock))  then
-                if(button='1')      then
-                    output<=input;
-               end if;
-            end if;     
-    end process;
+        );
+
+
 end Behavioral;

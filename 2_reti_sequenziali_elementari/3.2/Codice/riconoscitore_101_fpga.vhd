@@ -45,7 +45,10 @@ end riconoscitore_101_fpga;
 architecture Structural of riconoscitore_101_fpga is
     signal input_signal : std_logic ;
     signal mode_signal : std_logic ;
-
+    
+    signal switch_input_signal:std_logic;
+    signal switch_mode_signal:std_logic;
+    
     component riconoscitore_101
         Port(   input   :   in  std_logic;
                 a       :   in  std_logic; -- segnale di tempificazione (clock)
@@ -65,11 +68,7 @@ architecture Structural of riconoscitore_101_fpga is
     end component;   
     
     component ButtonDebouncer is
-        generic (                       
-            CLK_period: integer := 10;  -- periodo del clock (della board) in nanosecondi
-            btn_noise_time: integer := 10000000 -- durata stimata dell'oscillazione del bottone in nanosecondi
-                                                -- il valore di default � 10 millisecondi
-        );
+
         Port ( RST : in STD_LOGIC;
                CLK : in STD_LOGIC;
                BTN : in STD_LOGIC;
@@ -92,26 +91,28 @@ begin
                 CLEARED_BTN => mode_signal
         );
     
-    --button_input:   switch_capture
-      --  Port map(   clock=>CLK,
-        --            button=>BTN_in, -- BTNL
-          --          input=>SW_in, -- primo switch
-            --        output=>input_signal
-     --   );
+    switch_input:   switch_capture
+        Port map(   clock=>CLK,
+                    button=>input_signal, -- BTNL
+                    input=>SW_in, -- primo switch
+                    output=>switch_input_signal
+        );
         
-    --button_mode:   switch_capture
-    --    Port map(   clock=>CLK,
-     --               button=>BTN_mode, -- BTNR
-     --               input=>SW_mode, -- secondo switch
-     --               output=>mode_signal   
-      --  );
+    switch_mode:   switch_capture
+        Port map(   clock=>CLK,
+                    button=>mode_signal, -- BTNR
+                    input=>SW_mode, -- secondo switch
+                    output=>switch_mode_signal   
+        );
+    
+    
         
     riconoscitore: riconoscitore_101
         port map(
-                input=> input_signal, 
-                a=>CLK,
+                input=> switch_input_signal, 
+                a=>input_signal ,
                 reset=>RST,
-                m=>mode_signal,
+                m=>switch_mode_signal,
                 output=>LED_out  
                 
         );
