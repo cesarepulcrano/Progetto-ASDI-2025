@@ -35,7 +35,7 @@ use IEEE.math_real.all;
 --use UNISIM.VComponents.all;
 
 entity contatore_mod_N is
-    Generic (N: integer :=60);
+    Generic (N: integer := 60);
     Port (      clock   :   in  std_logic;
                 reset   :   in  std_logic;
                 set     :   in  std_logic;

@@ -33,7 +33,7 @@ use IEEE.math_real.all;
 --use UNISIM.VComponents.all;
 
 entity PC is
-    Generic (N : integer := 8);
+    Generic (N : integer := 16);
     Port (  CLK : in std_logic;
             RST : in std_logic;
             START : in std_logic;
