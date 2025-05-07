@@ -46,7 +46,7 @@ end MEM;
 architecture Behavioral of MEM is
     type MEMORY_N_4 is array (0 to N-1) of std_logic_vector(3 downto 0); -- Matrice N x 4
     
-    signal MEM_DATA : MEMORY_N_4 := (others => "0000");
+    signal MEM_DATA : MEMORY_N_4 := (others => "UUUU");
 begin
     process(CLK)
     begin

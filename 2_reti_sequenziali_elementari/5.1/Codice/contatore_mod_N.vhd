@@ -52,8 +52,7 @@ begin
     
     count:process(clock)
         begin
-                    
-            
+
             --if(clock'event AND clock='0') then
               if(falling_edge(clock) OR set = '1')then  
                 co_temp<='0';   
