@@ -88,22 +88,23 @@ architecture Structural of PO is
     signal rom_out : std_logic_vector(7 downto 0) := (others => '0');
     signal count_in : std_logic_vector(integer(ceil(log2(real(N))))-1 downto 0) := (others => '0');
     signal count_end : std_logic;
+    signal reset_cont:std_logic;
     signal mem_in : std_logic_vector(3 downto 0) := (others => '0');
 
 begin
-
+    
     counter : contatore_mod_N
         Generic Map (N=>N)
-        Port Map (  clock=>CLK,
-                    reset=>RST,
-                    set=>EN_COUNT,
+        Port Map (  clock=>EN_COUNT,
+                    reset=>RST ,
+                    set=>'0',
                     load=>(others => '0'),
                     cont=>count_in,
                     co=>count_end
         );
     
     COUNT <= count_in; -- Aggiornamento del contatore per il sistema completo
-    count_end <= RST_COUNT;
+    reset_cont <= count_end OR RST OR RST_COUNT;
 
     ROM_mem : ROM
         Generic Map (N=>N)

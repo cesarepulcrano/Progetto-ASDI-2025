@@ -58,13 +58,14 @@ begin
         case stato_corrente is
             when IDLE =>
                 RST_COUNT <= '1';
+                EN_COUNT <= '0';
                 if(START = '1') then
                     stato_prossimo <= READROM;
                 elsif(START ='0') then
                     stato_prossimo <= IDLE;
                 end if;
             when READROM =>
-                RST_COUNT <= '0';
+                EN_COUNT <= '0';
                 READ_ROM <= '1';
                 stato_prossimo <= WRITEMEM;
             when WRITEMEM =>

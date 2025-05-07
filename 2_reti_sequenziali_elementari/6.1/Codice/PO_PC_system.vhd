@@ -88,7 +88,9 @@ begin
                     COUNT=>count_value,
                     data_out=>data_out
         );
-        
+    
+    
+   
     PC_part: PC
         Generic Map (N=>N)
         Port Map (  CLK=>CLK,
@@ -100,5 +102,4 @@ begin
                     EN_COUNT=>count_en,
                     RST_COUNT=>count_rst
         );
-
 end Structural;

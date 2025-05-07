@@ -41,15 +41,17 @@ architecture Behavioral of PO_PC_system_tb is
         Port (  CLK : in std_logic;
                 RST : in std_logic;
                 START : in std_logic;
+                COUNT_out : out std_logic_vector(3 downto 0);
                 data_out : out std_logic_vector(3 downto 0)
         );
     end component;
     
     signal clock : std_logic;
-    signal period : time := 10 ns;
+    constant CLK_period : time := 10 ns;
     signal reset : std_logic;
     signal start : std_logic;
     signal data : std_logic_vector(3 downto 0);
+    signal output_count : std_logic_vector(3 downto 0);
 
 begin
 
@@ -58,26 +60,30 @@ begin
         Port Map (  CLK=>clock,
                     RST=>reset,
                     START=>start,
+                    COUNT_out=>output_count,
                     data_out=>data
         );
         
     clk : process
     begin
         clock <= '0';
-        wait for period/2;
+        wait for CLK_period/2;
         clock <= '1';
-        wait for period/2;
+        wait for CLK_period/2;
     end process;
     
     test : process
     begin
         start <= '1';
-        wait for 10 ns;
+        wait for 10*3*16 ns;
         
+        reset<='1';
         start<='0';
-        wait for 100 ns;
-        
-        reset <= '1';
+        wait for CLK_PERIOD;
+        reset<='0';
+        wait for CLK_PERIOD;
+        start<='1';
+        wait for 10000000 ns;
         wait;
     end process;
 
