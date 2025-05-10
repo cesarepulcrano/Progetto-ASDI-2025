@@ -57,5 +57,5 @@ architecture Behavioral of demux_1_4 is
                     y<="----";
                     
                 end if;
-        end process;
-    end Behavioral;
+    end process;
+ end Behavioral;

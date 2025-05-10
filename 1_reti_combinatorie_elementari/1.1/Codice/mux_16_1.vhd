@@ -38,15 +38,16 @@ entity mux_16_1 is
             s2  : in    STD_LOGIC;
             s3  : in    STD_LOGIC;
             y0   : out   STD_LOGIC
-            
     );
 end mux_16_1;
 
 architecture Structural of mux_16_1 is
+
         signal u0  :   STD_LOGIC := '0';
         signal u1  :   STD_LOGIC := '0';
         signal u2  :   STD_LOGIC := '0';
         signal u3  :   STD_LOGIC := '0';
+        
     component mux_4_1
         port(   a0  :   in  STD_LOGIC;
                 a1  :   in  STD_LOGIC;
@@ -56,7 +57,6 @@ architecture Structural of mux_16_1 is
                 s1  :   in  STD_LOGIC; -- selezione
                 y   :   out STD_LOGIC 
         );
-     
 
      end component;
 

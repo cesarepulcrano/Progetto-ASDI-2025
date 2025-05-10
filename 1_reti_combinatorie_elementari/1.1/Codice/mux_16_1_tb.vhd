@@ -50,8 +50,8 @@ architecture behavioral of mux_16_1_tb is
     end component;
     
     signal input    :   std_logic_vector (15 downto 0 )  := (others => 'U');
-    signal control  :   STD_LOGIC_VECTOR (3 downto 0)   := (others => 'U');
-    signal output   : std_logic :='U';   
+    signal control  :   std_logic_vector (3 downto 0)   := (others => 'U');
+    signal output   :   std_logic :='U';   
     
 begin
     
