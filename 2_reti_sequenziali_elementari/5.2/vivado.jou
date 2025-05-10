@@ -137,3 +137,4 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/cronometro_on_display.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
