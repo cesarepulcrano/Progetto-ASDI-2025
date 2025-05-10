@@ -103,11 +103,8 @@ begin
         hour_in<="10111";
         wait for 90 ns;
         set_l<='0';
-        r<='1';
-        wait for 100 ns;
-        r<='0';
         wait for 200000 ms;
-        
+  
         end process;
 
 

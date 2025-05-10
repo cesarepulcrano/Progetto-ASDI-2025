@@ -80,9 +80,9 @@ architecture Structural of cronometro_b is
     end component;
     
     signal clk_wave:    std_logic;
-    signal second_to_and: std_logic;
-    signal minute_to_and: std_logic;
-    signal and_to_and:  std_logic;
+    signal second_to_and: std_logic:='0';
+    signal minute_to_and: std_logic:='0';
+    signal and_to_and:  std_logic:='0';
     
     signal minute_en: std_logic;
     signal hour_en: std_logic;
@@ -105,7 +105,7 @@ begin
     secondi: contatore_mod_N 
         Generic Map(N=>60)
         
-        Port Map(   clock=>CLK,
+        Port Map(   clock=>clk_wave,
                     reset=>RST,
                     set=>set,
                     load=>load_second,
@@ -114,7 +114,7 @@ begin
         );
     
     second_to_minute: and_gate
-        Port Map( a=>CLK,
+        Port Map( a=>clk_wave,
                   b=>second_to_and,
                   y=>minute_en
         );
@@ -131,7 +131,7 @@ begin
         ); 
     
     and1: and_gate
-        Port Map( a=>CLK,
+        Port Map( a=>clk_wave,
                   b=>minute_to_and,
                   y=>and_to_and
         );

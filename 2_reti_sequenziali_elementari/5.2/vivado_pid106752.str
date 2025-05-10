@@ -1,0 +1,1225 @@
+/*
+
+AMD Vivado v2024.2 (64-bit) [Major: 2024, Minor: 2]
+SW Build: 5239630 on Fri Nov 08 22:34:34 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+Process ID (PID): 106752
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu May 08 18:08:49 CEST 2025
+Time zone: 	Central European Standard Time (Europe/Rome)
+
+OS: Ubuntu
+OS Version: 6.11.0-25-generic
+OS Architecture: amd64
+Available processors (cores): 12
+LSB Release Description: Ubuntu 24.04.2 LTS
+
+Display: 1
+Screen size: 2560x1440
+Local screen bounds: x = 66, y = 32, width = 2494, height = 1408
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/Xilinx/Vivado/2024.2/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	cesare
+User home directory: /home/cesare
+User working directory: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_DATADIR: /tools/Xilinx/Vivado/2024.2/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2024.2/bin
+
+Vivado preferences file: /home/cesare/.Xilinx/Vivado/2024.2/vivado.xml
+Vivado preferences directory: /home/cesare/.Xilinx/Vivado/2024.2/
+Vivado layouts directory: /home/cesare/.Xilinx/Vivado/2024.2/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2024.2/lib/classes/planAhead.jar
+Vivado log file: 	/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/vivado.log
+Vivado journal file: 	/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-106752-cesare-desktop
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+GNOME_SHELL_SESSION_MODE: ubuntu
+RDI_APPROOT: /tools/Xilinx/Vivado/2024.2
+RDI_BASEROOT: /tools/Xilinx/Vivado
+RDI_BINROOT: /tools/Xilinx/Vivado/2024.2/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/Xilinx/Vivado/2024.2/data
+RDI_INSTALLROOT: /tools/Xilinx
+RDI_INSTALLVER: 2024.2
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Ubuntu/24:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vivado/2024.2/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/Xilinx/Vitis/2024.2/bin:/tools/Xilinx/Vivado/2024.2/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2:cesare-desktop_1746720520_106683
+RDI_SHARED_DATA: /tools/Xilinx/SharedData/2024.2/data
+RDI_TPS_ROOT: /tools/Xilinx/Vivado/2024.2/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+XILINX: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2024.2/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis/2024.2
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2024.2
+XILINX_SDK: /tools/Xilinx/Vitis/2024.2
+XILINX_VITIS: /tools/Xilinx/Vitis/2024.2
+XILINX_VIVADO: /tools/Xilinx/Vivado/2024.2
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,502 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: Progetto/project_5.2.xpr. Version: Vivado v2024.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 124 MB (+127268kb) [00:00:03]
+// [Engine Memory]: 1,462 MB (+1381915kb) [00:00:03]
+// [GUI Memory]: 139 MB (+8981kb) [00:00:04]
+// Tcl Message: open_project Progetto/project_5.2.xpr 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'. 
+// Project name: project_5.2; location: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bh (Open Project Progress)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,513 MB. GUI used memory: 80 MB. Current time: 5/8/25, 6:08:50 PM CEST
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// [Engine Memory]: 1,570 MB (+35952kb) [00:00:10]
+// [GUI Memory]: 152 MB (+6967kb) [00:00:19]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog0)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:09:05 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:09:05 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 160 MB (+206kb) [00:00:54]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 69 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// HMemoryUtils.trashcanNow. Engine heap size: 1,700 MB. GUI used memory: 85 MB. Current time: 5/8/25, 6:10:15 PM CEST
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,430 MB (+820000kb) [00:01:37]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,442 MB. GUI used memory: 85 MB. Current time: 5/8/25, 6:10:19 PM CEST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 2,731 MB (+187619kb) [00:01:38]
+// TclEventType: DESIGN_NEW
+// [GUI Memory]: 179 MB (+11120kb) [00:01:38]
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7895.629 ; gain = 0.000 ; free physical = 22136 ; free virtual = 34086 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7953.473 ; gain = 0.000 ; free physical = 22110 ; free virtual = 34059 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. INFO: [Designutils 20-5722] Start Reading Physical Databases. 
+// Tcl Message: Reading placement. 
+// Tcl Message: Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8525.504 ; gain = 0.000 ; free physical = 21633 ; free virtual = 33583 
+// Tcl Message: Reading placer database... 
+// Tcl Message: Read Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8525.504 ; gain = 0.000 ; free physical = 21633 ; free virtual = 33583 Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8525.504 ; gain = 0.000 ; free physical = 21633 ; free virtual = 33583 Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8525.504 ; gain = 0.000 ; free physical = 21633 ; free virtual = 33583 
+// Tcl Message: Reading routing. 
+// Tcl Message: Read RouteStorage: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 8525.504 ; gain = 0.000 ; free physical = 21633 ; free virtual = 33583 Read Physdb Files: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 8525.504 ; gain = 0.000 ; free physical = 21633 ; free virtual = 33583 
+// Tcl Message: Restored from archive | CPU: 0.020000 secs | Memory: 0.433014 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 8525.504 ; gain = 0.000 ; free physical = 21633 ; free virtual = 33583 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8525.504 ; gain = 0.000 ; free physical = 21633 ; free virtual = 33583 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: CURR_DESIGN_SET
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 8849.652 ; gain = 1153.180 ; free physical = 21321 ; free virtual = 33270 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 192 MB (+4955kb) [00:01:39]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dV' command handler elapsed time: 7 seconds
+dismissDialog("Open Implemented Design"); // bh (Open Implemented Design Progress)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 33, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Tcl (Dont Echo) Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bh (Open Hardware Manager Progress)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 34, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // aq (PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, auto_connect_target_menu)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2024.2   **** Build date : Oct 29 2024 at 10:16:47     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2024.2.0   ****** Build date   : Oct 30 2024-19:19:07     **** Build number : 2024.2.1730312347       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292B18091A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/cronometro_on_display.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bh (Auto Connect Progress)
+// [GUI Memory]: 211 MB (+9689kb) [00:01:46]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 35, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // aq (xc7a100t_0)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog2)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/cronometro_on_display.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'E' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bh (Program Device Progress)
+// Elapsed time: 39 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ai (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // aq (PAResourceCommand.PACommandNames_FILESET_WINDOW, view_filesets_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ai (PAResourceItoN.MainMenuMgr_WINDOW, Window)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+// Elapsed time: 178 seconds
+selectCodeEditor("cronometro_on_display.vhd", 1333, 380); // ae (cronometro_on_display.vhd)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), chrono : cronometro_b(Structural) (cronometro_b.vhd)]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), chrono : cronometro_b(Structural) (cronometro_b.vhd)]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd)]", 5); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), counter_instance : counter_mod8(Behavioral) (counter_mod8.vhd)]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), counter_instance : counter_mod8(Behavioral) (counter_mod8.vhd)]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), cathodes_input_man_instance : cathodes_input_manager(Behavioral) (cathodes_input_manager.vhd)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,862 MB. GUI used memory: 131 MB. Current time: 5/8/25, 6:14:25 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), cathodes_input_man_instance : cathodes_input_manager(Behavioral) (cathodes_input_manager.vhd)]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// [Engine Memory]: 2,882 MB (+15153kb) [00:05:43]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), cathodes_instance : cathodes_manager(Behavioral) (cathodes_manager.vhd)]", 9, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), cathodes_instance : cathodes_manager(Behavioral) (cathodes_manager.vhd)]", 9, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_mod8.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("counter_mod8.vhd", 512, 185); // ae (counter_mod8.vhd)
+selectCodeEditor("counter_mod8.vhd", 1053, 181); // ae (counter_mod8.vhd)
+selectCodeEditor("counter_mod8.vhd", 894, 172); // ae (counter_mod8.vhd)
+selectCodeEditor("counter_mod8.vhd", 1135, 193); // ae (counter_mod8.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_input_manager.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 18 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 392, 443); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 392, 443, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 628, 451); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 628, 451, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 571, 450); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 574, 450); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 417, 107); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 417, 107, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 307, 484); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 137, 486); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 303, 301); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 303, 301, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 419, 299); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 419, 299, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 576, 294); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 644, 300); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 559, 327); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 575, 407); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 426, 434); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 415, 439); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 444, 403); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 351, 320); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 342, 312); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 558, 395); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 558, 395, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_manager.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 74 seconds
+selectCodeEditor("cathodes_manager.vhd", 585, 327); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 661, 339); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 195, 133); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 195, 133, false, false, false, false, true); // ae (cathodes_manager.vhd) - Double Click
+// Elapsed time: 45 seconds
+selectCodeEditor("cathodes_manager.vhd", 106, 59); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 47, 353); // ae (cathodes_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 09m:36s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 09m:38s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,972 MB. GUI used memory: 133 MB. Current time: 5/8/25, 6:18:25 PM CEST
+// Elapsed time: 26 seconds
+selectCodeEditor("cathodes_manager.vhd", 74, 261); // ae (cathodes_manager.vhd)
+// Elapsed time: 16 seconds
+selectCodeEditor("cathodes_manager.vhd", 189, 319); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 189, 319, false, false, false, false, true); // ae (cathodes_manager.vhd) - Double Click
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'c'); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 499, 349); // ae (cathodes_manager.vhd)
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'v'); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 641, 362); // ae (cathodes_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 10m:02s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,003 MB. GUI used memory: 133 MB. Current time: 5/8/25, 6:18:50 PM CEST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 10m:04s
+// Elapsed time: 16 seconds
+selectCodeEditor("cathodes_manager.vhd", 710, 187); // ae (cathodes_manager.vhd)
+// Elapsed time: 13 seconds
+selectCodeEditor("cathodes_manager.vhd", 343, 99); // ae (cathodes_manager.vhd)
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'c'); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 410, 96); // ae (cathodes_manager.vhd)
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'v'); // ae (cathodes_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 10m:38s
+selectCodeEditor("cathodes_manager.vhd", 56, 215); // ae (cathodes_manager.vhd)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 10m:40s
+selectCodeEditor("cathodes_manager.vhd", 541, 252); // ae (cathodes_manager.vhd)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'c'); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 343, 298); // ae (cathodes_manager.vhd)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("cathodes_manager.vhd", 126, 227); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 130, 223); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 130, 223, false, false, false, false, true); // ae (cathodes_manager.vhd) - Double Click
+selectCodeEditor("cathodes_manager.vhd", 130, 223); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 127, 246); // ae (cathodes_manager.vhd)
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'c'); // ae (cathodes_manager.vhd)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("cathodes_manager.vhd", 103, 217); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 56, 212); // ae (cathodes_manager.vhd)
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'c'); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 102, 288); // ae (cathodes_manager.vhd)
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'v'); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 681, 221); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 369, 130); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 404, 254); // ae (cathodes_manager.vhd)
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'v'); // ae (cathodes_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,032 MB (+6445kb) [00:11:37]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,032 MB. GUI used memory: 133 MB. Current time: 5/8/25, 6:20:20 PM CEST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11m:34s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11m:36s
+selectCodeEditor("cathodes_manager.vhd", 262, 363); // ae (cathodes_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11m:56s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11m:58s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,070 MB. GUI used memory: 133 MB. Current time: 5/8/25, 6:20:45 PM CEST
+// Elapsed time: 23 seconds
+selectCodeEditor("cathodes_manager.vhd", 77, 300); // ae (cathodes_manager.vhd)
+// Elapsed time: 48 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // R (PAResourceOtoP.PAViews_HARDWARE, Hardware)
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // R (RDIResource.RDIViews_PROPERTIES, Properties)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), anodes_instance : anodes_manager(Behavioral) (anodes_manager.vhd)]", 11, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), anodes_instance : anodes_manager(Behavioral) (anodes_manager.vhd)]", 11, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 3,092 MB. GUI used memory: 134 MB. Current time: 5/8/25, 6:21:45 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), cathodes_instance : cathodes_manager(Behavioral) (cathodes_manager.vhd)]", 10, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), cathodes_instance : cathodes_manager(Behavioral) (cathodes_manager.vhd)]", 10, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), anodes_instance : anodes_manager(Behavioral) (anodes_manager.vhd)]", 11, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), anodes_instance : anodes_manager(Behavioral) (anodes_manager.vhd)]", 11, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_input_manager.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_mod8.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_manager.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 17 seconds
+selectCodeEditor("cathodes_manager.vhd", 187, 390); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 188, 390, false, false, false, false, true); // ae (cathodes_manager.vhd) - Double Click
+selectCodeEditor("cathodes_manager.vhd", 190, 390); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 59, 362); // ae (cathodes_manager.vhd)
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'c'); // ae (cathodes_manager.vhd)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("cathodes_manager.vhd", 277, 387); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 376, 389); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 58, 363); // ae (cathodes_manager.vhd)
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'v'); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 104, 361); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 103, 361, false, false, false, false, true); // ae (cathodes_manager.vhd) - Double Click
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'c'); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 156, 390); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 156, 390, false, false, false, false, true); // ae (cathodes_manager.vhd) - Double Click
+typeControlKey((HResource) null, "cathodes_manager.vhd", 'v'); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 237, 447); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 239, 476); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 235, 366); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 238, 326); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 243, 306); // ae (cathodes_manager.vhd)
+selectCodeEditor("cathodes_manager.vhd", 238, 272); // ae (cathodes_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,122 MB. GUI used memory: 136 MB. Current time: 5/8/25, 6:23:40 PM CEST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 14m:54s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 14m:56s
+// Elapsed time: 30 seconds
+selectCodeEditor("cathodes_manager.vhd", 129, 278); // ae (cathodes_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 15m:08s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 15m:10s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.srcs/utils_1/imports/synth_1/cronometro_on_display.dcp with file /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/cronometro_on_display.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog3)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:24:00 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:24:00 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 70 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Bitstream Generation Completed"); // W.a (dialog4)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 35, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // aq (xc7a100t_0)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog5)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/cronometro_on_display.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'E' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bh (Program Device Progress)
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), cathodes_instance : cathodes_manager(Behavioral) (cathodes_manager.vhd)]", 9, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), cathodes_instance : cathodes_manager(Behavioral) (cathodes_manager.vhd)]", 9, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("cathodes_manager.vhd", 711, 151); // ae (cathodes_manager.vhd)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), cathodes_input_man_instance : cathodes_input_manager(Behavioral) (cathodes_input_manager.vhd)]", 8, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cronometro_on_display(Structural) (cronometro_on_display.vhd), display : display_seven_segments(Structural) (display_seven_segments.vhd), cathodes_input_man_instance : cathodes_input_manager(Behavioral) (cathodes_input_manager.vhd)]", 8, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Elapsed time: 43 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 279, 484); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 273, 510); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 262, 539); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 251, 569); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 249, 600); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 246, 619); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 244, 648); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 245, 675); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 554, 687); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 554, 687, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 370, 601); // ae (cathodes_input_manager.vhd)
+// Elapsed time: 18 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 251, 654); // ae (cathodes_input_manager.vhd)
+// Elapsed time: 25 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 296, 593); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:30s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 19m:32s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,175 MB. GUI used memory: 135 MB. Current time: 5/8/25, 6:28:20 PM CEST
+// Elapsed time: 31 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 436, 539); // ae (cathodes_input_manager.vhd)
+// Elapsed time: 27 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 560, 585); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 560, 585, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 546, 563); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 546, 563, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 551, 539); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 551, 539, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 565, 512); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 565, 512, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 404, 474); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 449, 478); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 141, 660); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 151, 654); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 309, 470); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 20m:36s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 20m:38s
+// Elapsed time: 19 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 570, 429); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 525, 427); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 525, 427, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 538, 409); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 538, 409, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 571, 395); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 571, 396, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 581, 421); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 581, 421, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 407, 715); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 407, 715, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 407, 694); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 407, 694, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 410, 647); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 410, 647, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 410, 618); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 410, 618, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 416, 595); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 416, 595, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+selectCodeEditor("cathodes_input_manager.vhd", 417, 577); // ae (cathodes_input_manager.vhd)
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // h (PAResourceEtoH.FileSetPanel_MESSAGES)
+selectCodeEditor("cathodes_input_manager.vhd", 158, 705); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 486, 717); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,201 MB (+18199kb) [00:21:04]
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:00s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 21m:02s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,211 MB. GUI used memory: 135 MB. Current time: 5/8/25, 6:29:50 PM CEST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_manager.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.srcs/utils_1/imports/synth_1/cronometro_on_display.dcp with file /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/cronometro_on_display.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog6)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:30:27 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log 
+// Tcl Message: [Thu May  8 18:30:27 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog7)
+selectCodeEditor("cathodes_manager.vhd", 415, 464); // ae (cathodes_manager.vhd)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 4 bits, source has 3 bits [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cathodes_input_manager.vhd:26]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cathodes_input_manager.vhd;-;;-;16;-;line;-;26;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// Elapsed time: 13 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 216, 159); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 263, 161); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 181, 155); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 132, 156); // ae (cathodes_input_manager.vhd)
+// Elapsed time: 12 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 640, 221); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:48s
+// Elapsed time: 14 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 552, 273); // ae (cathodes_input_manager.vhd)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:50s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:52s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,245 MB. GUI used memory: 135 MB. Current time: 5/8/25, 6:31:40 PM CEST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 22m:54s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_mod8.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cronometro_on_display.vhd", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("cronometro_on_display.vhd", 730, 362); // ae (cronometro_on_display.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 23m:04s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 23m:06s
+// Elapsed time: 14 seconds
+selectCodeEditor("cronometro_on_display.vhd", 704, 592); // ae (cronometro_on_display.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 23m:20s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 23m:22s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 35, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // aq (xc7a100t_0)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+// HOptionPane Error: 'The file '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/ 5.2/Progetto/project_5.2.runs/impl_1/cronometro_on_display.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("OptionPane.button", "OK", "Invalid File Name"); // JButton (OptionPane.button)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Program Device"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Program Device"); // aT (dialog8)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog9)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:32:16 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:32:16 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_input_manager.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("cathodes_input_manager.vhd", 214, 420); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 382, 305); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 437, 303); // ae (cathodes_input_manager.vhd)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog10)
+selectCodeEditor("cathodes_input_manager.vhd", 589, 270); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,282 MB. GUI used memory: 136 MB. Current time: 5/8/25, 6:32:40 PM CEST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 23m:54s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 23m:56s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_manager.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("cathodes_manager.vhd", 586, 337); // ae (cathodes_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:06s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 24m:08s
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_input_manager.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 35, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog11)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:33:17 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:33:17 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog12)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2549] positional association cannot follow named association [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cronometro_on_display.vhd:145]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cronometro_on_display.vhd;-;;-;16;-;line;-;145;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("cronometro_on_display.vhd", 442, 595); // ae (cronometro_on_display.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 25m:12s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,327 MB. GUI used memory: 137 MB. Current time: 5/8/25, 6:34:00 PM CEST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 25m:14s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog13)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:34:02 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:34:02 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog14)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 3 bits, source has 4 bits [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cathodes_input_manager.vhd:26]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 3 bits, source has 4 bits [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cathodes_input_manager.vhd:26]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cathodes_input_manager.vhd;-;;-;16;-;line;-;26;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// Elapsed time: 19 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 194, 836); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 26m:08s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 26m:10s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog15)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:35:00 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:35:00 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog16)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'value_in': port width = 18, actual width = 32 [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd:124]. ]", 1, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'value_in': port width = 18, actual width = 32 [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd:124]. ]", 1, true); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd;-;;-;16;-;line;-;124;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// [Engine Memory]: 3,367 MB (+5719kb) [00:26:45]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,367 MB. GUI used memory: 138 MB. Current time: 5/8/25, 6:35:30 PM CEST
+// Elapsed time: 17 seconds
+selectCodeEditor("display_seven_segments.vhd", 587, 390); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 543, 326); // ae (display_seven_segments.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 27m:08s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,413 MB. GUI used memory: 138 MB. Current time: 5/8/25, 6:35:55 PM CEST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 27m:10s
+// Elapsed time: 11 seconds
+selectCodeEditor("display_seven_segments.vhd", 678, 271); // ae (display_seven_segments.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 27m:20s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 27m:22s
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog17)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:36:09 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:36:09 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog18)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'nibble_out': port width = 3, actual width = 4 [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd:128]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd;-;;-;16;-;line;-;128;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// Elapsed time: 18 seconds
+selectCodeEditor("display_seven_segments.vhd", 346, 638); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 357, 648); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 357, 648, false, false, false, false, true); // ae (display_seven_segments.vhd) - Double Click
+selectCodeEditor("display_seven_segments.vhd", 550, 44); // ae (display_seven_segments.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 28m:16s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog19)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:37:04 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:37:04 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 28m:18s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,442 MB. GUI used memory: 140 MB. Current time: 5/8/25, 6:37:05 PM CEST
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog20)
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'value': port width = 3, actual width = 4 [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd:133]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd;-;;-;16;-;line;-;133;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("display_seven_segments.vhd", 273, 595); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 273, 595, false, false, false, false, true); // ae (display_seven_segments.vhd) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("display_seven_segments.vhd", 142, 454); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 148, 478); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 147, 507); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 138, 548); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 151, 372); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 545, 359); // ae (display_seven_segments.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 29m:18s
+selectCodeEditor("display_seven_segments.vhd", 544, 444); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 548, 470); // ae (display_seven_segments.vhd)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 29m:20s
+selectCodeEditor("display_seven_segments.vhd", 396, 331); // ae (display_seven_segments.vhd)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog21)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:38:14 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:38:14 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog22)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'value32_in': port width = 18, actual width = 17 [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cronometro_on_display.vhd:145]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'value32_in': port width = 18, actual width = 17 [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cronometro_on_display.vhd:145]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cronometro_on_display.vhd;-;;-;16;-;line;-;145;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("cronometro_on_display.vhd", 533, 599); // ae (cronometro_on_display.vhd)
+selectCodeEditor("cronometro_on_display.vhd", 491, 306); // ae (cronometro_on_display.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 30m:06s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 30m:08s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,470 MB. GUI used memory: 139 MB. Current time: 5/8/25, 6:38:55 PM CEST
+// Elapsed time: 17 seconds
+selectCodeEditor("cronometro_on_display.vhd", 414, 616); // ae (cronometro_on_display.vhd)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 30m:20s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 30m:22s
+selectCodeEditor("cronometro_on_display.vhd", 507, 593); // ae (cronometro_on_display.vhd)
+selectCodeEditor("cronometro_on_display.vhd", 507, 593); // ae (cronometro_on_display.vhd)
+selectCodeEditor("cronometro_on_display.vhd", 507, 593, false, false, false, false, true); // ae (cronometro_on_display.vhd) - Double Click
+selectCodeEditor("cronometro_on_display.vhd", 702, 251); // ae (cronometro_on_display.vhd)
+selectCodeEditor("cronometro_on_display.vhd", 702, 251, false, false, false, false, true); // ae (cronometro_on_display.vhd) - Double Click
+selectCodeEditor("cronometro_on_display.vhd", 599, 586); // ae (cronometro_on_display.vhd)
+selectCodeEditor("cronometro_on_display.vhd", 694, 449); // ae (cronometro_on_display.vhd)
+selectCodeEditor("cronometro_on_display.vhd", 694, 449, false, false, false, false, true); // ae (cronometro_on_display.vhd) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("cronometro_on_display.vhd", 373, 603); // ae (cronometro_on_display.vhd)
+selectCodeEditor("cronometro_on_display.vhd", 373, 603, false, false, false, false, true); // ae (cronometro_on_display.vhd) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display_seven_segments.vhd", 5); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("display_seven_segments.vhd", 569, 386); // ae (display_seven_segments.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:08s
+// [Engine Memory]: 3,536 MB (+1136kb) [00:31:13]
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_manager.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:10s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_input_manager.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("cathodes_input_manager.vhd", 381, 474); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 394, 477); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 420, 623); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 422, 599); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 425, 569); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 437, 544); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 454, 508); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 533, 478); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 396, 481); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:48s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,542 MB. GUI used memory: 139 MB. Current time: 5/8/25, 6:40:35 PM CEST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:50s
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog23)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:40:54 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:40:54 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+selectCodeEditor("cathodes_input_manager.vhd", 399, 488); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 399, 488, false, false, false, false, true); // ae (cathodes_input_manager.vhd) - Double Click
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 18 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog24)
+selectCodeEditor("cathodes_input_manager.vhd", 395, 473); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32m:34s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32m:36s
+selectCodeEditor("cathodes_input_manager.vhd", 544, 126); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32m:42s
+selectCodeEditor("cathodes_input_manager.vhd", 389, 475); // ae (cathodes_input_manager.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,580 MB. GUI used memory: 140 MB. Current time: 5/8/25, 6:41:30 PM CEST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32m:44s
+selectCodeEditor("cathodes_input_manager.vhd", 414, 480); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 394, 472); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32m:54s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32m:56s
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog25)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:41:45 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:41:45 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 448, 503); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 474, 469); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 448, 499); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 184, 674); // ae (cathodes_input_manager.vhd)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog26)
+selectCodeEditor("cathodes_input_manager.vhd", 98, 677); // ae (cathodes_input_manager.vhd)
+selectCodeEditor("cathodes_input_manager.vhd", 140, 672); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 34m:14s
+// Elapsed time: 50 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 145, 669); // ae (cathodes_input_manager.vhd)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 34m:16s
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'value_in': port width = 17, actual width = 18 [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd:126]. ]", 6, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd;-;;-;16;-;line;-;126;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_input_manager.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_manager.vhd", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_input_manager.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("cathodes_input_manager.vhd", 588, 468); // ae (cathodes_input_manager.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:08s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,624 MB. GUI used memory: 141 MB. Current time: 5/8/25, 6:43:55 PM CEST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:10s
+// Elapsed time: 15 seconds
+selectCodeEditor("cathodes_input_manager.vhd", 138, 690); // ae (cathodes_input_manager.vhd)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'value_in': port width = 17, actual width = 18 [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd:126]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd;-;;-;16;-;line;-;126;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'value_in': port width = 17, actual width = 18 [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/display_seven_segments.vhd:126]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("display_seven_segments.vhd", 194, 294); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 194, 294, false, false, false, false, true); // ae (display_seven_segments.vhd) - Double Click
+selectCodeEditor("display_seven_segments.vhd", 342, 569); // ae (display_seven_segments.vhd)
+selectCodeEditor("display_seven_segments.vhd", 342, 569, false, false, false, false, true); // ae (display_seven_segments.vhd) - Double Click
+selectCodeEditor("display_seven_segments.vhd", 673, 473); // ae (display_seven_segments.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:50s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "counter_mod8.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cathodes_input_manager.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 35m:52s
+// HMemoryUtils.trashcanNow. Engine heap size: 3,655 MB. GUI used memory: 141 MB. Current time: 5/8/25, 6:44:40 PM CEST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Launch Runs"); // cP (dialog27)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:44:41 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:44:41 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Synthesis Failed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // W.a (dialog28)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'value32_in': port width = 17, actual width = 18 [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cronometro_on_display.vhd:138]. ]", 1, false); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Codice/cronometro_on_display.vhd;-;;-;16;-;line;-;138;-;;-;16;-;"); // u.d (PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE)
+selectCodeEditor("cronometro_on_display.vhd", 353, 379); // ae (cronometro_on_display.vhd)
+selectCodeEditor("cronometro_on_display.vhd", 353, 379, false, false, false, false, true); // ae (cronometro_on_display.vhd) - Double Click
+selectCodeEditor("cronometro_on_display.vhd", 392, 540); // ae (cronometro_on_display.vhd)
+selectCodeEditor("cronometro_on_display.vhd", 560, 676); // ae (cronometro_on_display.vhd)
+selectCodeEditor("cronometro_on_display.vhd", 560, 676, false, false, false, false, true); // ae (cronometro_on_display.vhd) - Double Click
+selectCodeEditor("cronometro_on_display.vhd", 729, 331); // ae (cronometro_on_display.vhd)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 36m:50s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 36m:52s
+dismissDialog("Launch Runs"); // cP (dialog29)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Thu May  8 18:45:38 2025] Launched synth_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/synth_1/runme.log [Thu May  8 18:45:38 2025] Launched impl_1... Run output will be captured here: /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,673 MB. GUI used memory: 141 MB. Current time: 5/8/25, 6:45:40 PM CEST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 72 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // W.a (dialog30)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 35, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // aq (xc7a100t_0)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program", "Program Device"); // a (PAResourceOtoP.ProgramFpgaDialog_PROGRAM, RDIResource.BaseDialog_OK)
+dismissDialog("Program Device"); // aT (dialog31)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.2/Progetto/project_5.2.runs/impl_1/cronometro_on_display.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'E' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bh (Program Device Progress)
+// [GUI Memory]: 226 MB (+4453kb) [00:52:57]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,655 MB. GUI used memory: 125 MB. Current time: 5/8/25, 7:15:40 PM CEST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292B18091A 

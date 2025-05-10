@@ -1,0 +1,429 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu May  8 11:48:29 2025
+# Process ID         : 5592
+# Current directory  : /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2
+# Command line       : vivado Progetto/project_6.2.xpr
+# Log file           : /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/vivado.log
+# Journal file       : /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/vivado.jou
+# Running On         : cesare-desktop
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.2 LTS
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor
+# CPU Frequency      : 4359.745 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 32792 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 41382 MB
+# Available Virtual  : 37332 MB
+#-----------------------------------------------------------
+start_gui
+open_project Progetto/project_6.2.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Progetto/project_6.2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -top PO_PC_fpga -part xc7a100tcsg324-1 -lint 
+Command: synth_design -top PO_PC_fpga -part xc7a100tcsg324-1 -lint
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5901
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 8108.832 ; gain = 403.297 ; free physical = 22402 ; free virtual = 34108
+---------------------------------------------------------------------------------
+Clean up Linter database...
+INFO: [Synth 8-638] synthesizing module 'PO_PC_fpga' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:42]
+INFO: [Synth 8-3491] module 'divisore_di_frequenza' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/divisore_di_frequenza.vhd:34' bound to instance 'div' of component 'divisore_di_frequenza' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'divisore_di_frequenza' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/divisore_di_frequenza.vhd:47]
+	Parameter CLKIN_freq bound to: 100000000 - type: integer 
+	Parameter CLKOUT_freq bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divisore_di_frequenza' (1#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/divisore_di_frequenza.vhd:47]
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd:34' bound to instance 'button1' of component 'ButtonDebouncer' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'ButtonDebouncer' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd:46]
+	Parameter CLK_period bound to: 10 - type: integer 
+	Parameter btn_noise_time bound to: 10000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'ButtonDebouncer' (2#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd:46]
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd:34' bound to instance 'button2' of component 'ButtonDebouncer' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:113]
+INFO: [Synth 8-3491] module 'PO_PC_system' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd:35' bound to instance 'system' of component 'PO_PC_system' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'PO_PC_system' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd:44]
+	Parameter N bound to: 16 - type: integer 
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'PO' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:35' bound to instance 'PO_part' of component 'PO' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'PO' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'contatore_mod_N' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:37' bound to instance 'counter' of component 'contatore_mod_N' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'contatore_mod_N' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+WARNING: [Synth 8-614] signal 'set' is read in the process but is not in the sensitivity list [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:53]
+WARNING: [Synth 8-614] signal 'load' is read in the process but is not in the sensitivity list [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:53]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:53]
+WARNING: [Synth 8-614] signal 'temp' is read in the process but is not in the sensitivity list [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'contatore_mod_N' (3#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'ROM' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/ROM.vhd:35' bound to instance 'ROM_mem' of component 'ROM' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'ROM' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/ROM.vhd:44]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ROM' (4#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/ROM.vhd:44]
+INFO: [Synth 8-3491] module 'M_machine' declared at '/home/cesare/Uni/Progetto-ASDI-2025/1_reti_combinatorie_elementari/2.1/Codice/M_machine.vhd:34' bound to instance 'M' of component 'M_machine' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'M_machine' [/home/cesare/Uni/Progetto-ASDI-2025/1_reti_combinatorie_elementari/2.1/Codice/M_machine.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'M_machine' (5#1) [/home/cesare/Uni/Progetto-ASDI-2025/1_reti_combinatorie_elementari/2.1/Codice/M_machine.vhd:42]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'MEM' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/MEM.vhd:35' bound to instance 'MEM_store' of component 'MEM' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'MEM' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/MEM.vhd:46]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MEM' (6#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/MEM.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'PO' (7#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'PC' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd:35' bound to instance 'PC_part' of component 'PC' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'PC' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PC' (8#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'PO_PC_system' (9#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'PO_PC_fpga' (10#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:42]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 8198.770 ; gain = 493.234 ; free physical = 22245 ; free virtual = 33954
+---------------------------------------------------------------------------------
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (lin64) Build 5239630 Fri Nov 08 22:34:34 MST 2024
+| Date         : Thu May  8 11:50:05 2025
+| Host         : cesare-desktop running 64-bit Ubuntu 24.04.2 LTS
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+RTL Linter Report
+
+Table of Contents
+-----------------
+1. Summary
+
+1. Summary
+----------
+
++----------+------------------+--------------+----------+
+| Rule ID  | Severity         | # Violations | # Waived |
++----------+------------------+--------------+----------+
+| ASSIGN-6 | WARNING          | 1            | 0        |
+| INFER-1  | CRITICAL WARNING | 6            | 0        |
+| INFER-4  | CRITICAL WARNING | 1            | 0        |
++----------+------------------+--------------+----------+
+
+
+CRITICAL WARNING: [Synth 37-88] [INFER-1]Inferred latch found for EN_COUNT_reg. 
+RTL Name 'EN_COUNT_reg', Hierarchy 'PC', File '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd', Line 61.
+CRITICAL WARNING: [Synth 37-88] [INFER-1]Inferred latch found for READ_ROM_reg. 
+RTL Name 'READ_ROM_reg', Hierarchy 'PC', File '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd', Line 69.
+CRITICAL WARNING: [Synth 37-88] [INFER-1]Inferred latch found for RST_COUNT_reg. 
+RTL Name 'RST_COUNT_reg', Hierarchy 'PC', File '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd', Line 60.
+CRITICAL WARNING: [Synth 37-88] [INFER-1]Inferred latch found for WRITE_MEM_reg. 
+RTL Name 'WRITE_MEM_reg', Hierarchy 'PC', File '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd', Line 73.
+WARNING: [Synth 37-93] [ASSIGN-6]Signal 'reset_cont' was assigned but not read. 
+RTL Name 'reset_cont', Hierarchy 'PO', File '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd', Line 91.
+CRITICAL WARNING: [Synth 37-88] [INFER-1]Inferred latch found for co_temp_reg. 
+RTL Name 'co_temp_reg', Hierarchy 'contatore_mod_N', File '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd', Line 58.
+CRITICAL WARNING: [Synth 37-88] [INFER-1]Inferred latch found for temp_reg. 
+RTL Name 'temp_reg', Hierarchy 'contatore_mod_N', File '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd', Line 60.
+CRITICAL WARNING: [Synth 37-113] [INFER-4]Combination loop detected on 'temp' at '0' bit. 
+Hierarchy 'contatore_mod_N', File '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd', Line 49.
+INFO: [Synth 37-85] Total of 8 linter message(s) generated.
+INFO: [Synth 37-45] Linter Run Finished!
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 8207.676 ; gain = 502.141 ; free physical = 22245 ; free virtual = 33953
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 5 Warnings, 7 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: PO_PC_fpga
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 8268.363 ; gain = 45.844 ; free physical = 22142 ; free virtual = 33874
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PO_PC_fpga' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:42]
+INFO: [Synth 8-3491] module 'divisore_di_frequenza' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/divisore_di_frequenza.vhd:34' bound to instance 'div' of component 'divisore_di_frequenza' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'divisore_di_frequenza' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/divisore_di_frequenza.vhd:47]
+	Parameter CLKIN_freq bound to: 100000000 - type: integer 
+	Parameter CLKOUT_freq bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divisore_di_frequenza' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/divisore_di_frequenza.vhd:47]
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd:34' bound to instance 'button1' of component 'ButtonDebouncer' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'ButtonDebouncer' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd:46]
+	Parameter CLK_period bound to: 10 - type: integer 
+	Parameter btn_noise_time bound to: 10000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'ButtonDebouncer' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd:46]
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd:34' bound to instance 'button2' of component 'ButtonDebouncer' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:113]
+INFO: [Synth 8-3491] module 'PO_PC_system' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd:35' bound to instance 'system' of component 'PO_PC_system' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'PO_PC_system' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd:44]
+	Parameter N bound to: 16 - type: integer 
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'PO' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:35' bound to instance 'PO_part' of component 'PO' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'PO' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'contatore_mod_N' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:37' bound to instance 'counter' of component 'contatore_mod_N' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'contatore_mod_N' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+WARNING: [Synth 8-614] signal 'set' is read in the process but is not in the sensitivity list [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:53]
+WARNING: [Synth 8-614] signal 'load' is read in the process but is not in the sensitivity list [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:53]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:53]
+WARNING: [Synth 8-614] signal 'temp' is read in the process but is not in the sensitivity list [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'contatore_mod_N' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'ROM' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/ROM.vhd:35' bound to instance 'ROM_mem' of component 'ROM' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'ROM' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/ROM.vhd:44]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ROM' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/ROM.vhd:44]
+INFO: [Synth 8-3491] module 'M_machine' declared at '/home/cesare/Uni/Progetto-ASDI-2025/1_reti_combinatorie_elementari/2.1/Codice/M_machine.vhd:34' bound to instance 'M' of component 'M_machine' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'M_machine' [/home/cesare/Uni/Progetto-ASDI-2025/1_reti_combinatorie_elementari/2.1/Codice/M_machine.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'M_machine' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/1_reti_combinatorie_elementari/2.1/Codice/M_machine.vhd:42]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'MEM' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/MEM.vhd:35' bound to instance 'MEM_store' of component 'MEM' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'MEM' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/MEM.vhd:46]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MEM' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/MEM.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'PO' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'PC' declared at '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd:35' bound to instance 'PC_part' of component 'PC' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'PC' [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd:48]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PC' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'PO_PC_system' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'PO_PC_fpga' (0#1) [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8351.332 ; gain = 128.812 ; free physical = 22051 ; free virtual = 33783
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8366.176 ; gain = 143.656 ; free physical = 22049 ; free virtual = 33781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 8366.176 ; gain = 143.656 ; free physical = 22049 ; free virtual = 33781
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8366.184 ; gain = 0.000 ; free physical = 22049 ; free virtual = 33781
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/Nexys-A7-100T-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'L'. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/Nexys-A7-100T-Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/Nexys-A7-100T-Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/Nexys-A7-100T-Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/Nexys-A7-100T-Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/Nexys-A7-100T-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8482.918 ; gain = 0.000 ; free physical = 22118 ; free virtual = 33864
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 8691.297 ; gain = 468.777 ; free physical = 22031 ; free virtual = 33784
+35 Infos, 6 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 8691.297 ; gain = 483.613 ; free physical = 22031 ; free virtual = 33784
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2185.293; main = 2185.293; forked = 0.000
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 8681.168; main = 8681.168; forked = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd w ]
+add_files -fileset sim_1 /home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fgpa_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Progetto/project_6.2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'fgpa_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Progetto/project_6.2.sim/sim_1/behav/xsim'
+xvhdl --incr --relax -prj fgpa_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/ButtonDebouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ButtonDebouncer'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/MEM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MEM'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/1_reti_combinatorie_elementari/2.1/Codice/M_machine.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'M_machine'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PO'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/PO_PC_fpga.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PO_PC_fpga'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/PO_PC_system.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PO_PC_system'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.1/Codice/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROM'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/5.1/Codice/contatore_mod_N.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'contatore_mod_N'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/divisore_di_frequenza.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'divisore_di_frequenza'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Codice/fgpa_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fgpa_tb'
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Progetto/project_6.2.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot fgpa_tb_behav xil_defaultlib.fgpa_tb -log elaborate.log
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot fgpa_tb_behav xil_defaultlib.fgpa_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.divisore_di_frequenza [\divisore_di_frequenza(clkout_fr...]
+Compiling architecture behavioral of entity xil_defaultlib.ButtonDebouncer [buttondebouncer_default]
+Compiling architecture behavioral of entity xil_defaultlib.contatore_mod_N [\contatore_mod_N(n=16)\]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture dataflow of entity xil_defaultlib.M_machine [m_machine_default]
+Compiling architecture behavioral of entity xil_defaultlib.MEM [mem_default]
+Compiling architecture structural of entity xil_defaultlib.PO [po_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC [pc_default]
+Compiling architecture structural of entity xil_defaultlib.PO_PC_system [po_pc_system_default]
+Compiling architecture structural of entity xil_defaultlib.PO_PC_fpga [po_pc_fpga_default]
+Compiling architecture behavioral of entity xil_defaultlib.fgpa_tb
+Built simulation snapshot fgpa_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/cesare/Uni/Progetto-ASDI-2025/2_reti_sequenziali_elementari/6.2/Progetto/project_6.2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fgpa_tb_behav -key {Behavioral:sim_1:Functional:fgpa_tb} -tclbatch {fgpa_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fgpa_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fgpa_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  8 12:01:28 2025...
