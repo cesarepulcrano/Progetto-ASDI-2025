@@ -64,7 +64,7 @@ architecture Structural of PO_PC_fpga is
     component divisore_di_frequenza is
         generic(
             CLKIN_freq  : integer := 100000000;  -- clock board 100MHz
-            CLKOUT_freq : integer := 1           -- frequenza desiderata 1Hz
+            CLKOUT_freq : integer := 1000000          -- frequenza desiderata 1Hz
         );
         Port (
             clock_in  : in  STD_LOGIC;
@@ -105,14 +105,14 @@ begin
     
     button1: ButtonDebouncer 
         Port Map(   RST=>'0',
-                    CLK=>wave,
+                    CLK=>CLK100MHZ,
                     BTN=>BTNL,
                     CLEARED_BTN=>left_button
                  );
                  
     button2: ButtonDebouncer 
         Port Map(   RST=>'0',
-                    CLK=>wave,
+                    CLK=>CLK100MHZ,
                     BTN=>BTNR,
                     CLEARED_BTN=>right_button
                  );
@@ -126,7 +126,7 @@ begin
     
     
     system: PO_PC_system 
-        Port Map(   CLK=> wave ,
+        Port Map(   CLK=> CLK100MHZ ,
                     RST=>left_button,--left_button,
                     START=>right_button,
                     data_out=>LED

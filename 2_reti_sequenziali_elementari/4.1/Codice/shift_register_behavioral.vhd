@@ -36,6 +36,8 @@ entity shift_register_behavioral is
     Port (  input   : in std_logic;
             RST     : in std_logic;
             LOAD    : in std_logic;
+            load_data: in std_logic_vector(N-1 downto 0);
+            EN      : in std_logic;
             CLK     : in std_logic; -- Abilitazione
             s       : in std_logic; -- 0 = shift a destra, 1 = shift a sinistra
             Y       : in std_logic; -- 0 = shift di 1 bit, 1 = shift di 2 bit
@@ -55,6 +57,8 @@ begin
             if(RST = '1') then
                 output_temp <= (others => '0');
             elsif(LOAD = '1') then
+                output_temp<=  load_data;  
+            elsif(EN = '1') then
                 case s is
                     when '0' => -- Shift a destra
                         if(Y = '0') then -- Shift di 1 bit
