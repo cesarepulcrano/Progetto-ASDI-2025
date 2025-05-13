@@ -42,7 +42,7 @@ entity cronometro_on_display is
 end cronometro_on_display;
 
 architecture Structural of cronometro_on_display is
-    component cronometro_b is
+    component cronometro is
         Port (  CLK: in std_logic;
                 RST: in std_logic;
                 set: in std_logic;
@@ -119,7 +119,7 @@ begin
                     CLEARED_BTN=>button_2
                );
     
-     chrono: cronometro_b 
+     chrono: cronometro
         Port Map(   CLK=>CLK100MHZ,
                     RST=>button_1,
                     set=>button_2,

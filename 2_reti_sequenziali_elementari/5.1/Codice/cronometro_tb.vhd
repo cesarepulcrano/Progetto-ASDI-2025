@@ -37,7 +37,7 @@ end cronometro_tb;
 
 architecture Behavioral of cronometro_tb is
     
-    component cronometro_b is
+    component cronometro is
     Port (  CLK: in std_logic;
             RST: in std_logic;
             set: in std_logic;
@@ -69,7 +69,7 @@ end component;
         constant CLK_period : time := 10 ns;
 begin
     
-    uut:cronometro_b
+    uut:cronometro
         port map(   CLK=>clock,
                     RST=>r,
                     set=>set_l,
@@ -109,6 +109,5 @@ begin
         wait for 200000 ms;
         
         end process;
-
-
+        
 end Behavioral;
