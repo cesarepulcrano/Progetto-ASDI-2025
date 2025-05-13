@@ -63,7 +63,7 @@ begin
                     c_out=>carry(0)
                     );
     
-    fa_chain: for i in N-2 downto 1 generate
+    fa_chain: for i in 1 to 6 generate
         fa: full_adder 
             Port Map(   a=>a(i),
                         b=>b(i),
@@ -74,10 +74,10 @@ begin
     end generate;
     
     fa_N_1: full_adder
-        Port Map(   a=>a(N-1),
-                    b=>b(N-1),
-                    c_in=>carry(N-2),
-                    s=>s(N-1),
+        Port Map(   a=>a(7),
+                    b=>b(7),
+                    c_in=>carry(6),
+                    s=>s(7),
                     c_out=>c_out
                     );
 end Structural;

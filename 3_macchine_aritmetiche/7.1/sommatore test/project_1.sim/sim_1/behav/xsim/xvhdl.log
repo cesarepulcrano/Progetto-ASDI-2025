@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/3_macchine_aritmetiche/7.1/sommatore test/project_1.srcs/sim_1/new/tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/cesare/Uni/Progetto-ASDI-2025/3_macchine_aritmetiche/7.1/Codice/ripple_carry_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ripple_carry_adder'

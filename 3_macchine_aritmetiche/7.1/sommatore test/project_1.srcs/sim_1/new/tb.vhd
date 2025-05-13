@@ -66,9 +66,9 @@ begin
               
               stim: process
               begin
-                a<="00000111";
+                a<="00000000";
                 b<="00000001";
-                c_in<='0';
+                c_in<='1';
                 wait;
                 end process;
 

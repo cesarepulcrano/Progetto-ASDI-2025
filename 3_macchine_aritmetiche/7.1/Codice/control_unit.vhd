@@ -59,7 +59,7 @@ begin
     comb:process(stato_corrente,ENABLE,Q0,Q1,count)
     begin
         --en_count<='0';
-        --SUBTRACT<='0';
+        SUBTRACT<='0';
         SHIFT<='0';
                 init<='0';
                 LOAD_A<='0'; --prove
@@ -79,7 +79,7 @@ begin
             end if;    
         when SCAN =>
             SHIFT<='0';
-            init<='0';
+            init<='1';
             LOAD_A<='0';
             LOAD_Q<='0';
             LOAD_M<='0';
@@ -91,14 +91,17 @@ begin
                 stato_prossimo<=RSHIFT;
             end if;    
         when SUM_STATE =>
+        init<='0';
             SUBTRACT<='0';
             stato_prossimo<=LOADA_STATE;
         when SUBTRACT_STATE =>
+        init<='0';
             SUBTRACT<='1';
             
             stato_prossimo<=LOADA_STATE;
         when LOADA_STATE =>
             SHIFT<='0';
+            SUBTRACT<='0';
             LOAD_A<='1';
             stato_prossimo<=RSHIFT;    
         when RSHIFT =>
