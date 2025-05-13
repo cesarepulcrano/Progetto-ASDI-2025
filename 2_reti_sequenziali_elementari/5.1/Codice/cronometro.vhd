@@ -32,7 +32,7 @@ use IEEE.math_real.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity cronometro_b is
+entity cronometro is
     Port (  CLK: in std_logic;
             RST: in std_logic;
             set: in std_logic;
@@ -47,10 +47,10 @@ entity cronometro_b is
             
             c_out       :   out std_logic
     );
-end cronometro_b;
+end cronometro;
 
 
-architecture Structural of cronometro_b is
+architecture Structural of cronometro is
     
      component divisore_di_frequenza is
         generic(
@@ -100,7 +100,6 @@ begin
             reset=>RST,
             clock_out=>clk_wave
         );
-   
     
     secondi: contatore_mod_N 
         Generic Map(N=>60)
@@ -144,7 +143,6 @@ begin
      --hour_en  <= second_to_and AND minute_to_and AND CLK;              
     ore: contatore_mod_N 
         Generic Map(N=>24)
-        
         Port Map(   clock=>hour_en,
                     reset=>RST,
                     set=>set,
@@ -152,4 +150,5 @@ begin
                     cont=>cont_hour,
                     co=>c_out
         );
+        
 end Structural;
