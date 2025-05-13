@@ -33,9 +33,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity riconoscitore_101 is
     Port (  input   :   in  std_logic;
-            a       :   in  std_logic; -- segnale ti tempificazione(clock)
+            a       :   in  std_logic; -- segnale di tempificazione(clock)
             reset   :   in  std_logic;
-            m       :   in  std_logic; --0 modalità non sovrapposta, 1 modalità parzialmente sovrapposta
+            m       :   in  std_logic; -- 0 modalità non sovrapposta, 1 modalità parzialmente sovrapposta
             output  :   out std_logic
      );
 end riconoscitore_101;
@@ -48,7 +48,7 @@ architecture Behavioral of riconoscitore_101 is
     signal  stato_prossimo  :   stato;
 begin
     
-    state_proccess: process(stato_corrente,input,m)
+    state_process: process(stato_corrente,input,m)
         begin
             
             case stato_corrente is
@@ -160,6 +160,5 @@ begin
                 stato_corrente<=stato_prossimo;
             end if;
     end process;
-
-
+    
 end Behavioral;
