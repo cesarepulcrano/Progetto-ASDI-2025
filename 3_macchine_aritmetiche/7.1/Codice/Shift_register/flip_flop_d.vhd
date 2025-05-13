@@ -34,6 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity flip_flop_d is
     Port (  D   : in std_logic;
             A   : in std_logic;
+            EN  : in std_logic;
             RST : in std_logic;
             Q   : out std_logic
     );
@@ -48,7 +49,7 @@ begin
         if(A'event and A='1') then
             if(RST='1') then
                 Q <= '0';
-            else
+            elsif(EN='1') then
                 Q <= D;
             end if;
         end if;

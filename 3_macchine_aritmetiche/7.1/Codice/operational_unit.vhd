@@ -127,7 +127,7 @@ begin
         
 
     A: shift_register 
-        Generic Map(N=>8)
+        Generic Map(N=>N)
         Port Map(   CLK=>CLK,
                     RST=>RST,
                     input=>a_input,
@@ -142,22 +142,23 @@ begin
     A_to_Q<=output_temp(N);
     
     Q: shift_register 
-        Generic Map(N=>8)
+        Generic Map(N=>N+1)
         Port Map(   CLK=>CLK,
                     RST=>RST,
                     input=>A_to_Q,
                     LOAD=>LOAD_Q,
-                    load_data=>X,
+                    load_data=>X&"0",
                     EN=>SHIFT,
                     s=>'1',
                     Y=>'0',
-                    output=>output_temp(N-1 downto 0)
+                    output(N downto 1)=>output_temp(N-1 downto 0),
+                    output(0)=>Q0
         );
-      Q0<=output_temp(0);
-      Q1<=output_temp(1); 
+      --Q0<=output(0);
+      Q1<=output_temp(0); 
       
       M:M_register 
-        Generic Map(N=>8)
+        Generic Map(N=>N)
         Port Map( CLK=>CLK,
                RST=>RST,
                load=>LOAD_M,
@@ -176,7 +177,7 @@ begin
       
       adder:adder_subtractor
         Generic Map(N=>N)
-        Port Map(   a=>output_temp(N-1 downto 0),
+        Port Map(   a=>output_temp(2*N-1 downto N),
                     b=>M_out,
                     c_in=>SUBTRACT,
                     s=>sum_to_A

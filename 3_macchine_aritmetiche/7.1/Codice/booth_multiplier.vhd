@@ -98,7 +98,8 @@ architecture Structural of booth_multiplier is
     
 begin
 
-    cu: control_unit 
+    cu: control_unit
+        Generic Map(N=>N) 
         Port Map(   CLK=>CLK,
                     RST=>RST,
                     ENABLE=>ENABLE, 
@@ -116,6 +117,7 @@ begin
                 
          );
     ou: operational_unit
+        Generic Map(N=>N)
         Port Map(   CLK=>CLK,
                     RST=>RST,
                     X=>X,

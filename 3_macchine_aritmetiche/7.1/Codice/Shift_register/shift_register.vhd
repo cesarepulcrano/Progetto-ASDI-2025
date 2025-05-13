@@ -50,7 +50,6 @@ architecture Structural of shift_register is
     signal retro : std_logic_vector(N-1 downto 0);-- := (others => 'U');
     signal mux_ff: std_logic_vector (N-1 downto 0);
     signal mux_4_to_mux_2:std_logic_vector (N-1 downto 0);
-    signal clock: std_logic;
         
     component mux_2_1
         Port (  x : in std_logic_vector(1 downto 0);
@@ -69,14 +68,13 @@ architecture Structural of shift_register is
     component flip_flop_d
         Port (  D   : in std_logic;
                 A   : in std_logic;
+                EN  : in std_logic;
                 RST : in std_logic;
                 Q   : out std_logic
         );
     end component;
 
 begin
-    
-    clock<=CLK AND EN;
     
     mux_load:for i in N-1 downto 0  generate
         mux:mux_2_1
@@ -150,7 +148,8 @@ begin
       FlipFlop:for i in N-1 downto 0 generate
         FF:flip_flop_d
             Port Map( D=>mux_ff(i),
-                      A=>clock,
+                      A=>CLK,
+                      EN=>EN OR LOAD,
                       RST=>RST,
                       Q=>retro(i)
             );

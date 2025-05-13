@@ -59,11 +59,16 @@ begin
     comb:process(stato_corrente,ENABLE,Q0,Q1,count)
     begin
         --en_count<='0';
-        
+        --SUBTRACT<='0';
+        SHIFT<='0';
+                init<='0';
+                LOAD_A<='0'; --prove
+                LOAD_Q<='0';
+                LOAD_M<='0';
         case stato_corrente is
         when IDLE =>
             if(ENABLE='1') then
-                SHIFT<='1';
+                SHIFT<='0';
                 init<='1';
                 LOAD_A<='1'; --prove
                 LOAD_Q<='1';
@@ -90,9 +95,10 @@ begin
             stato_prossimo<=LOADA_STATE;
         when SUBTRACT_STATE =>
             SUBTRACT<='1';
+            
             stato_prossimo<=LOADA_STATE;
         when LOADA_STATE =>
-            SHIFT<='1';
+            SHIFT<='0';
             LOAD_A<='1';
             stato_prossimo<=RSHIFT;    
         when RSHIFT =>
@@ -115,7 +121,7 @@ begin
 
     mem: process(CLK)
     begin
-        if(falling_edge(CLK)) then
+        if(rising_edge(CLK)) then
             if(RST='1') then
                 stato_corrente<=IDLE;
             else

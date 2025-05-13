@@ -33,7 +33,7 @@ use IEEE.math_real.ALL;
 --use UNISIM.VComponents.all;
 
 entity boot_multiplier_tb is
-    Generic(N: natural :=8);
+    Generic(N: natural :=4);
 --  Port ( );
 end boot_multiplier_tb;
 
@@ -81,8 +81,8 @@ begin
         rst<='0';
         wait for 10 ns;
         rst<='0';
-        x<="00000010";
-        y<="00000010";
+        x<="0101";
+        y<="0010";
         enable<='1';
         wait for 1000 ns;
         enable<='0';
