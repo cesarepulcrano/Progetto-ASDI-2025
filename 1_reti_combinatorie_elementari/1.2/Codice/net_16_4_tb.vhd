@@ -46,10 +46,10 @@ architecture Behavioral of net_16_4_tb is
     end component;
     
     
-    signal  input_test              :   std_logic_vector    (15 downto  0)  :=(others=>'U');--"0000000000000000";
-    signal  input_control_test      :   std_logic_vector    (3  downto  0)  :=(others=>'U');--"0000";
-    signal  output_control_test     :   std_logic_vector    (1  downto  0)  :=(others=>'U');--"00";
-    signal  output_test             :   std_logic_vector    (3  downto  0)  :=(others=>'U');
+    signal  input_test              :   std_logic_vector    (15 downto  0)  :=(others=>'0');--"0000000000000000";
+    signal  input_control_test      :   std_logic_vector    (3  downto  0)  :=(others=>'0');--"0000";
+    signal  output_control_test     :   std_logic_vector    (1  downto  0)  :=(others=>'0');--"00";
+    signal  output_test             :   std_logic_vector    (3  downto  0)  :=(others=>'0');
     
 begin
     
@@ -63,10 +63,10 @@ begin
     stim_proc: process
     begin
     
-    wait for 10 ns;
+    --wait for 10 ns;
     
     input_test<="1000000000000000";
-    wait for 10 ns;
+    --wait for 10 ns;
     input_control_test<="1111";
     output_control_test<="01";
     wait for 10 ns;

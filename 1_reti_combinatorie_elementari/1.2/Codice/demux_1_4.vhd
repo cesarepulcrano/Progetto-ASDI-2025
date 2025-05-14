@@ -53,8 +53,8 @@ architecture Behavioral of demux_1_4 is
                     y(2)<=x;
                 elsif(s1='1' and s0 = '1') then  
                     y(3)<=x;
-                else    
-                    y<="----";
+--                else    
+--                    y<="----";
                     
                 end if;
     end process;
