@@ -71,11 +71,11 @@ begin
                     --co_temp<='0';
                 else    
                     temp <= std_logic_vector(unsigned(temp) + 1);
-                    
-                end if; 
-                 
+                end if;
             end if;
         end process;
+        
         cont<=temp;
         co<=co_temp;
+        
 end Behavioral;

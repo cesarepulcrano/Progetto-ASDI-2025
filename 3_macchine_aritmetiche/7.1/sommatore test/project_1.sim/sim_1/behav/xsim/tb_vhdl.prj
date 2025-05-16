@@ -1,9 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../../Codice/adder_subtractor.vhd" \
-"../../../../../Codice/full_adder.vhd" \
-"../../../../../Codice/ripple_carry_adder.vhd" \
-"../../../../project_1.srcs/sim_1/new/tb.vhd" \
-
-# Do not sort compile order
-nosort

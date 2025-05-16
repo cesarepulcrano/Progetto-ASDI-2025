@@ -32,21 +32,21 @@ use IEEE.math_real.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity boot_multiplier_tb is
+entity divisore_tb is
     Generic(N: natural :=4);
 --  Port ( );
-end boot_multiplier_tb;
+end divisore_tb;
 
-architecture Behavioral of boot_multiplier_tb is
-    component booth_multiplier is
-        Generic(N: natural :=8);
-        Port (  CLK:    in  std_logic;
-                RST:    in  std_logic;
-                ENABLE: in  std_logic;
-                X:      in  std_logic_vector(N-1 downto 0);
-                Y:      in  std_logic_vector(N-1 downto 0);
-                output: out std_logic_vector(2*N-1 downto 0) 
-         );
+architecture Behavioral of divisore_tb is
+    component divisore is
+        Generic     (   N           :   natural :=4); 
+    Port        (   clk         :   in      std_logic;
+                    rst         :   in      std_logic;
+                    start       :   in      std_logic;
+                    D           :   in      std_logic_vector(   N-1 downto  0   );
+                    V           :   in      std_logic_vector(   N-1 downto  0   );
+                    risultato   :   out      std_logic_vector(   N-1 downto  0   )
+                 );
     end component;
     
     signal clock: std_logic;
@@ -54,18 +54,18 @@ architecture Behavioral of boot_multiplier_tb is
     signal enable: std_logic:='0';
     signal x: std_logic_vector(N-1 downto 0):=(others=>'0');
     signal y: std_logic_vector(N-1 downto 0):=(others=>'0');         
-    signal output: std_logic_vector(2*N-1 downto 0);
+    signal output: std_logic_vector(N-1 downto 0);
     signal CLOCK_PERIOD : time :=10 ns;
 begin
     
-    uut:booth_multiplier
+    uut:divisore
         Generic Map(N=>N)
         Port Map(   CLK=>clock,
                     RST=>rst,
-                    ENABLE=>enable,
-                    X=>x,
-                    Y=>y,
-                    output=>output 
+                    start=>enable,
+                    D=>x,
+                    V=>y,
+                    risultato=>output 
          );
     
     cwave:process
@@ -81,8 +81,8 @@ begin
         rst<='0';
         wait for 10 ns;
         rst<='0';
-        x<="0111";
-        y<="0110";
+        x<="0100";
+        y<="0010";
         enable<='1';
         wait for 10 ns;
         enable<='0';

@@ -55,7 +55,7 @@ architecture Structural of cronometro is
      component divisore_di_frequenza is
         generic(
         CLKIN_freq  : integer := 100000000;  -- clock board 100MHz
-        CLKOUT_freq : integer := 1           -- frequenza desiderata 1Hz
+        CLKOUT_freq : integer := 100000000          -- frequenza desiderata 1Hz
         );
         Port (
             clock_in  : in  STD_LOGIC;
