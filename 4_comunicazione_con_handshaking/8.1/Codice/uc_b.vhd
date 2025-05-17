@@ -48,7 +48,7 @@ end uc_b;
 
 architecture Behavioral of uc_b is
     
-    type stato is (WAIT_REQ, WRITE_REG_STATE ,READ,WRITE_MEM_STATE,COUNT_STATE);
+    type stato is (WAIT_REQ,SEND_ACK ,WRITE_REG_STATE ,READ,WRITE_MEM_STATE,COUNT_STATE);
     signal stato_corrente:  stato:=WAIT_REQ;
     signal stato_prossimo:  stato;
     
@@ -61,12 +61,18 @@ begin
                     en_count<='0';
                     if(REQ='1') then
                         --ACK<='1';
-                        stato_prossimo<=WRITE_REG_STATE;
+                        stato_prossimo<=SEND_ACK;
                     else 
                         stato_prossimo<=WAIT_REQ;
                     end if;
-                when WRITE_REG_STATE =>
+                when SEND_ACK =>
                     ACK<='1';
+                    if(req='0')  then
+                       stato_prossimo<= WRITE_REG_STATE;
+                    else
+                       stato_prossimo<=SEND_ACK; 
+                    end if;         
+                when WRITE_REG_STATE =>
                     WRITE_REG<='1';
                     stato_prossimo<=READ;
                 when READ =>

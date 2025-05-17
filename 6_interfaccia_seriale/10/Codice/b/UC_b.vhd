@@ -51,7 +51,7 @@ end UC_b;
 
 architecture Behavioral of UC_b is
     
-    type state is (wait_req,en_uart,write_mem_state,increment,uart_ready);
+    type state is (wait_req,send_ack,en_uart,write_mem_state,increment,uart_ready);
     signal stato_corrente: state:=wait_req;
     signal stato_prossimo: state;
     
@@ -64,12 +64,18 @@ begin
                 en_count<='0';
                 rd<='0';
                 if(req='1') then
-                    stato_prossimo<=en_uart;
+                    stato_prossimo<=send_ack;
                 else 
                     stato_prossimo<=wait_req;
                 end if;
-            when en_uart =>
+            when send_ack =>
                 ack<='1';
+                if(req='0') then
+                    stato_prossimo<=en_uart;
+                else
+                    stato_prossimo<=send_ack;
+                end if;
+            when en_uart =>
                 RD<='1';
                 stato_prossimo<=uart_ready;
             when uart_ready =>  

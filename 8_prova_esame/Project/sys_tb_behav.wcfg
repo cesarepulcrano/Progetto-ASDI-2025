@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sys_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sys_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,894.439 ns"></ZoomEndTime>
+      <Cursor1Time time="0.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="186"></NameColumnWidth>
+      <ValueColumnWidth column_width="117"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject type="logic" fp_name="/sys_tb/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sys_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sys_tb/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sys_tb/output">
+      <obj_property name="ElementShortName">output[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/sys_tb/period">
+      <obj_property name="ElementShortName">period</obj_property>
+      <obj_property name="ObjectShortName">period</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/sys_tb/uut/b_unit/uo/reg_out/load">
+      <obj_property name="ElementShortName">load</obj_property>
+      <obj_property name="ObjectShortName">load</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sys_tb/uut/b_unit/uo/reg_out/input">
+      <obj_property name="ElementShortName">input[3:0]</obj_property>
+      <obj_property name="ObjectShortName">input[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sys_tb/uut/b_unit/uo/reg_out/output">
+      <obj_property name="ElementShortName">output[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sys_tb/uut/b_unit/uo/cla/x">
+      <obj_property name="ElementShortName">x[3:0]</obj_property>
+      <obj_property name="ObjectShortName">x[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sys_tb/uut/b_unit/uo/cla/y">
+      <obj_property name="ElementShortName">y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">y[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/sys_tb/uut/b_unit/uo/cla/s">
+      <obj_property name="ElementShortName">s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s[3:0]</obj_property>
+   </wvobject>
+</wave_config>

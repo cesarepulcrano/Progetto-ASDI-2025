@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Codice/A.vhd" \
+"../../../../../Codice/B.vhd" \
+"../../../../../Codice/ROM_A.vhd" \
+"../../../../../Codice/carry_look_ahead.vhd" \
+"../../../../../Codice/contatore_mod_N.vhd" \
+"../../../../../Codice/generazione_propagazione.vhd" \
+"../../../../../Codice/register.vhd" \
+"../../../../../Codice/sommatore_cla.vhd" \
+"../../../../../Codice/system.vhd" \
+"../../../../../Codice/uc_a.vhd" \
+"../../../../../Codice/uc_b.vhd" \
+"../../../../../Codice/uo_a.vhd" \
+"../../../../../Codice/uo_b.vhd" \
+"../../../../../Codice/sys_tb.vhd" \
+
+# Do not sort compile order
+nosort

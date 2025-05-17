@@ -1,0 +1,18 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:55
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/A.vhd,1747497146,vhdl,,,,a,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/B.vhd,1747502050,vhdl,,,,b,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/ROM_A.vhd,1747496435,vhdl,,,,rom_a,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/carry_look_ahead.vhd,1747500028,vhdl,,,,carry_look_ahead,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/contatore_mod_N.vhd,1747083802,vhdl,,,,contatore_mod_n,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/generazione_propagazione.vhd,1747498735,vhdl,,,,generazione_propagazione,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/register.vhd,1747502952,vhdl,,,,reg,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/sommatore_cla.vhd,1747502264,vhdl,,,,sommatore_cla,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/sys_tb.vhd,1747503320,vhdl,,,,sys_tb,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/system.vhd,1747502143,vhdl,,,,system,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/uc_a.vhd,1747497596,vhdl,,,,uc_a,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/uc_b.vhd,1747502785,vhdl,,,,uc_b,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/uo_a.vhd,1747496782,vhdl,,,,uo_a,,,,,,,,
+/home/cesare/Uni/Progetto-ASDI-2025/8_prova_esame/Codice/uo_b.vhd,1747502297,vhdl,,,,uo_b,,,,,,,,
