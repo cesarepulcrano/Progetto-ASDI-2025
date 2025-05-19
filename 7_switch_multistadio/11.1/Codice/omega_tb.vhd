@@ -39,10 +39,10 @@ architecture Behavioral of omega_tb is
     component omega_network_prio_fissa is
         Generic(N: natural:=4);
         Port ( 
-                    message0 : in  std_logic_vector(5 downto 0);
-                    message1 : in  std_logic_vector(5 downto 0);
-                    message2 : in  std_logic_vector(5 downto 0);
-                    message3 : in  std_logic_vector(5 downto 0);
+                    message0 : in  std_logic_vector(3 downto 0);
+                    message1 : in  std_logic_vector(3 downto 0);
+                    message2 : in  std_logic_vector(3 downto 0);
+                    message3 : in  std_logic_vector(3 downto 0);
                     r0 : in STD_LOGIC;
                     r1 : in STD_LOGIC;
                     r2 : in STD_LOGIC;
@@ -55,10 +55,10 @@ architecture Behavioral of omega_tb is
         );
     end component;
     
-    signal message0 : std_logic_vector(5 downto 0);
-    signal message1 : std_logic_vector(5 downto 0);
-    signal message2 : std_logic_vector(5 downto 0);
-    signal message3 : std_logic_vector(5 downto 0);
+    signal message0 : std_logic_vector(3 downto 0);
+    signal message1 : std_logic_vector(3 downto 0);
+    signal message2 : std_logic_vector(3 downto 0);
+    signal message3 : std_logic_vector(3 downto 0);
     signal r0 : STD_LOGIC;
     signal r1 : STD_LOGIC;
     signal r2 : STD_LOGIC;
@@ -91,14 +91,14 @@ begin
     stim:process
     begin
         wait for 10 ns;
-        message0<="001001";
-        message1<="010001";
-        message2<="100000";
-        message3<="110011";
-        r0<='0';
+        message0<="0111";
+        message1<="0010";
+        message2<="0001";
+        message3<="0011";
+        r0<='1';
         r1<='1';
-        r2<='1';
-        r3<='1';
+        r2<='0';
+        r3<='0';
         wait for 10 ns;
         r0<='0';
         r1<='0';

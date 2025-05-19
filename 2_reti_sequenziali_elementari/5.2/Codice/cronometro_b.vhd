@@ -32,7 +32,7 @@ use IEEE.math_real.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity cronometro_b is
+entity cronometro is
     Port (  CLK: in std_logic;
             RST: in std_logic;
             set: in std_logic;
@@ -47,10 +47,10 @@ entity cronometro_b is
             
             c_out       :   out std_logic
     );
-end cronometro_b;
+end cronometro;
 
 
-architecture Structural of cronometro_b is
+architecture Structural of cronometro is
     
      component divisore_di_frequenza is
         generic(
