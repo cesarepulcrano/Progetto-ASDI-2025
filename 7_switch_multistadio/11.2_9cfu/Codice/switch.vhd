@@ -36,12 +36,10 @@ entity switch is
     Port (  
             clk : std_logic;
             rst: std_logic;
-            x0 : in STD_LOGIC_VECTOR (5 downto 0);
-            x1  : in STD_LOGIC_VECTOR (5 downto 0);
---            s_in : in STD_LOGIC;
---            s_out : in STD_LOGIC;
-            y0 : out STD_LOGIC_VECTOR (5 downto 0);
-            y1 : out STD_LOGIC_VECTOR (5 downto 0)
+            x0 : in STD_LOGIC_VECTOR (6 downto 0);
+            x1  : in STD_LOGIC_VECTOR (6 downto 0);
+            y0 : out STD_LOGIC_VECTOR (6 downto 0);
+            y1 : out STD_LOGIC_VECTOR (6 downto 0)
            );
 end switch;
 
@@ -51,10 +49,10 @@ architecture Structural of switch is
       Generic(Stage:natural:=0);
           Port (clk : std_logic;
                 rst: std_logic;
-                message0: in std_logic_vector(5 downto 0);
-                message1: in std_logic_vector(5 downto 0);
-                message_out0:out std_logic_vector(5 downto 0);
-                message_out1:out std_logic_vector(5 downto 0);
+                message0: in std_logic_vector(6 downto 0);
+                message1: in std_logic_vector(6 downto 0);
+                message_out0:out std_logic_vector(6 downto 0);
+                message_out1:out std_logic_vector(6 downto 0);
                 source_out: out std_logic;
                 dest_out: out std_logic
              );
@@ -62,19 +60,19 @@ architecture Structural of switch is
     
     component uo_switch is
         Port ( 
-                x0 : in STD_LOGIC_VECTOR (5 downto 0);
-                x1 : in STD_LOGIC_VECTOR (5 downto 0);
+                x0 : in STD_LOGIC_VECTOR (6 downto 0);
+                x1 : in STD_LOGIC_VECTOR (6 downto 0);
                 s_in : in STD_LOGIC;
                 s_out : in STD_LOGIC;
-                y0 : out STD_LOGIC_VECTOR (5 downto 0);
-                y1 : out STD_LOGIC_VECTOR (5 downto 0)
+                y0 : out STD_LOGIC_VECTOR (6 downto 0);
+                y1 : out STD_LOGIC_VECTOR (6 downto 0)
                );
     end component;
     
     signal sel:std_logic;
     signal dest: std_logic;
-    signal message0_uc: std_logic_vector(5 downto 0);
-    signal message1_uc: std_logic_vector(5 downto 0);
+    signal message0_uc: std_logic_vector(6 downto 0);
+    signal message1_uc: std_logic_vector(6 downto 0);
 begin
       uc: uc_switch 
       Generic Map(Stage=>Stage)

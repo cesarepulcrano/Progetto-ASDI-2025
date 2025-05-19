@@ -33,12 +33,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity uo_switch is
     Port ( 
-            x0 : in STD_LOGIC_VECTOR (5 downto 0);
-            x1 : in STD_LOGIC_VECTOR (5 downto 0);
+            x0 : in STD_LOGIC_VECTOR (6 downto 0);
+            x1 : in STD_LOGIC_VECTOR (6 downto 0);
             s_in : in STD_LOGIC;
             s_out : in STD_LOGIC;
-            y0 : out STD_LOGIC_VECTOR (5 downto 0);
-            y1 : out STD_LOGIC_VECTOR (5 downto 0)
+            y0 : out STD_LOGIC_VECTOR (6 downto 0);
+            y1 : out STD_LOGIC_VECTOR (6 downto 0)
            );
 end uo_switch;
 
@@ -56,7 +56,7 @@ architecture Structural of uo_switch is
     
 begin
     
-    sw:for i in 5 downto 0 generate
+    sw:for i in 6 downto 0 generate
         bit0:bit_switch
             Port Map( 
                     x(0)=>x0(i),
@@ -67,25 +67,6 @@ begin
                     y(1)=>y1(i)
                    );
     end generate;
-    
---    bit0:bit_switch
---        Port Map( 
---                x(0)=>x0(0),
---                x(1)=>x1(0),
---                s_in=>s_in,
---                s_out=>s_out,
---                y(0)=>y0(0),
---                y(1)=>y1(0)
---               );
-     
---     bit1:bit_switch
---        Port Map( 
---                x(0)=>x0(1),
---                x(1)=>x1(1),
---                s_in=>s_in,
---                s_out=>s_out,
---                y(0)=>y0(1),
---                y(1)=>y1(1)
---               );   
+
 
 end Structural;

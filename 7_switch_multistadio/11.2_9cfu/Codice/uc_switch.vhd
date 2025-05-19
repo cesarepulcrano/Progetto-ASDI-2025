@@ -35,10 +35,10 @@ entity uc_switch is
       Generic(Stage:natural:=0);
       Port (    clk : std_logic;
                 rst: std_logic;
-                message0: in std_logic_vector(5 downto 0);
-                message1: in std_logic_vector(5 downto 0);
-                message_out0:out std_logic_vector(5 downto 0);
-                message_out1:out std_logic_vector(5 downto 0);
+                message0: in std_logic_vector(6 downto 0);
+                message1: in std_logic_vector(6 downto 0);
+                message_out0:out std_logic_vector(6 downto 0);
+                message_out1:out std_logic_vector(6 downto 0);
                 source_out: out std_logic;
                 dest_out: out std_logic
              );
@@ -46,47 +46,46 @@ end uc_switch;
 
     
 architecture Behavioral of uc_switch is
-    signal data_store: std_logic_vector(5 downto 0):="UUUUUU";
-    signal message0_sig :std_logic_vector(5 downto 0):="UUUUUU";
-    signal message1_sig :std_logic_vector(5 downto 0):="UUUUUU";
-    signal nu : std_logic_vector(2 downto 0):="100";
+    signal data_store: std_logic_vector(6 downto 0);
+
 begin
    
     
     boh:process(clk,message0,message1)
     
     begin
-        message0_sig<=message0;
-    message1_sig<=message1; 
+
         if(rising_edge(clk)) then
-            if(data_store/="UUUUUU") then
-                nu<="000";
-                message0_sig<=data_store(5 downto 0);
+            if(data_store(6)='1') then
+                message_out1<=data_store(6 downto 0);
                 source_out<='1';
-                dest_out<=message1(Stage+3);
-                data_store<="UUUUUU";
-            elsif(message0/="UUUUUU") then
-                nu<="001";
-                message0_sig<=message0;
-                source_out<='0';
-                dest_out<=message0(Stage+3);
-                --message0_sig<="UUUUUUU";
-            --elsif(message1_sig/="UUUUUU") then
-            elsif(message1_sig/="UUUUUU" ) then  
-                nu<="010";
-                message_out1<=message1;
-                source_out<='1';
-                dest_out<=message1(Stage+3);
-                message1_sig<="UUUUUU";
-            elsif(message0(5 downto 3)=message1(5 downto 3)) then
-                    nu<="011";
+                dest_out<=data_store(5-Stage);
+                
+                data_store(6)<='0';
+            elsif(message0(6)='1' and message1(6)='1') then
                     data_store<=message1;
+                    
                     message_out0<=message0;
-                    dest_out<=message0(Stage+3);
                     source_out<='0';
+                    dest_out<=message0(5-Stage);        
+             elsif(message0(6)='1') then
+                    message_out0<=message0;
+                    source_out<='0';
+                    dest_out<=message0(5-Stage);
+             elsif(message1(6)='1') then  
+                    message_out1<=message1;
+                    source_out<='1';
+                    dest_out<=message1(5-Stage);
+             else
+                data_store<=(others=>'0');
+                message_out0<=(others=>'0');
+                message_out1<=(others=>'0');
+             end if;
             end if;
-         end if;           
+           
     end process;
-    message_out0<=message0_sig;
-    message_out1<=message1_sig;
+
+--    source_out<=source_temp;
+--    dest_out<=dest_temp; 
+
 end Behavioral;
