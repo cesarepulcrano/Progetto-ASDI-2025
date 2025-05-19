@@ -118,12 +118,13 @@ architecture Structural of UO is
     signal  s_to_q      :   std_logic;
     signal  s_out      :   std_logic;
     signal  try      :   std_logic;
-    signal  sum_out     :   std_logic_vector(N-1 downto 0);
-    signal  mux_to_a    :   std_logic_vector(N-1 downto 0);
+    signal  sum_out     :   std_logic_vector(2*N-1 downto 0);
+    signal  mux_to_a    :   std_logic_vector(2*N-1 downto 0);
     signal  quoziente   :   std_logic_vector(N-1 downto 0);
-    signal  resto       :   std_logic_vector(N-1 downto 0);
+    signal  resto       :   std_logic_vector(2*N-1 downto 0);
+    signal  a_setup     :   std_logic_vector(2*N-1 downto 0);
 begin
-    
+    a_setup<="0000"& D;
     contatore:contatore_mod_N
         Generic Map(N=>N)
         Port Map(      clock=>en_count,
@@ -154,10 +155,10 @@ begin
                     output=>quoziente
         );
     try<=quoziente(0);
-    selettore:for i in  N-1 downto 0 generate
+    selettore:for i in  2*N-1 downto 0 generate
         mux:mux_2_1
         Port Map(   x(0)=>sum_out(i),
-                    x(1)=>'0',
+                    x(1)=>a_setup(i),
                     s=>init,
                     y=>mux_to_A(i)
         );
@@ -165,7 +166,7 @@ begin
     end generate;
     
     A: shift_register
-        Generic Map(N=>N)
+        Generic Map(N=>2*N)
         Port Map(   clk=>clk,    
                     rst=>rst,
                     en=>shift,
@@ -185,9 +186,9 @@ begin
         );
     
     adder: adder_subtractor
-    Generic Map(N=>N)
+    Generic Map(N=>2*N)
     Port Map(   a=>resto,
-                b=>b_to_sum,
+                b=>"0000"&b_to_sum,
                 c_in=>subtract,
                 s=>sum_out
           );
