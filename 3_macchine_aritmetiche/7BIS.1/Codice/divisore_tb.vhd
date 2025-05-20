@@ -81,7 +81,7 @@ begin
         rst<='0';
         wait for 10 ns;
         rst<='0';
-        x<="0100";
+        x<="0111";
         y<="0010";
         enable<='1';
         wait for 10 ns;

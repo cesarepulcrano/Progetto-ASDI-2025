@@ -44,17 +44,17 @@ entity UC is
                 load_a      :   out     std_logic;                           
                 subtract    :   out     std_logic;                           
                 shift       :   out     std_logic;                           
-                count       :   in      std_logic_vector(integer(ceil(log2(real(N-1))))-1 downto 0);
+                count       :   in      std_logic_vector(integer(ceil(log2(real(N))))-1 downto 0);
                 s           :   in      std_logic
 
                 );
 end UC;
 
 architecture Behavioral of UC is
-    type state is (idle,shift_state,load_a_state,sum_sub,increment);
+    type state is (idle,shift_state,load_a_state,sum_sub,increment,correzione);
     signal stato_corrente:  state:=idle;
     signal stato_prossimo:  state;
-    signal full: std_logic_vector(integer(ceil(log2(real(N-1))))-1 downto 0):=(others=>'1');
+    signal full: std_logic_vector(integer(ceil(log2(real(N))))-1 downto 0):=(others=>'1');
 begin
     
     comb:process(stato_corrente,start,count,s)
@@ -66,7 +66,7 @@ begin
                     init<='1'; 
                     load_m <='1';  
                     load_q <='1';  
-                    load_a  <='1';       
+                    load_a  <='1';    
                     stato_prossimo<=shift_state;
                 else
                     stato_prossimo<=idle;
@@ -92,12 +92,21 @@ begin
                   load_a  <='1'; 
                   stato_prossimo<=increment;
              when increment =>
+                load_a  <='0';
                 en_count<='1';
                 if(count=full) then
                     stato_prossimo<=idle;
                 else 
                     stato_prossimo<=shift_state;
-                end if;                  
+                end if;
+              when correzione =>
+                if(s='1') then
+                    load_a<='1';
+                    subtract<='0';
+                    stato_prossimo<=idle;
+                 else 
+                    stato_prossimo<=idle;
+                end if;                         
         end case;
     end process;
     

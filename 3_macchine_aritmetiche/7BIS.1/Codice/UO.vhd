@@ -115,23 +115,22 @@ architecture Structural of UO is
     signal  b_to_sum    :   std_logic_vector(N-1 downto 0);
     signal  q_to_a      :   std_logic:='0';
     signal  a_to_s      :   std_logic;
-    signal  s_to_q      :   std_logic;
-    signal  s_out      :   std_logic;
-    signal  try      :   std_logic;
-    signal  sum_out     :   std_logic_vector(2*N-1 downto 0);
-    signal  mux_to_a    :   std_logic_vector(2*N-1 downto 0);
+    signal  s_to_q      :   std_logic:='0';
+    signal  s_out      :   std_logic:='0';
+    signal  sum_out     :   std_logic_vector(N downto 0);
+    signal  mux_to_a    :   std_logic_vector(N-1 downto 0);
     signal  quoziente   :   std_logic_vector(N-1 downto 0);
-    signal  resto       :   std_logic_vector(2*N-1 downto 0);
-    signal  a_setup     :   std_logic_vector(2*N-1 downto 0);
+    signal  resto       :   std_logic_vector(N-1 downto 0);
+    --signal  a_setup     :   std_logic_vector(2*N-1 downto 0);
 begin
-    a_setup<="0000"& D;
+    --a_setup<="0000"& D;
     contatore:contatore_mod_N
         Generic Map(N=>N)
-        Port Map(      clock=>en_count,
-                    reset=>rst,
-                    set=>'0',
-                    load=>(others=>'0'),
-                    cont=>count
+        Port Map(       clock=>en_count,
+                        reset=>rst,
+                        set=>'0',
+                        load=>(others=>'0'),
+                        cont=>count
         );
     
     M:  M_register 
@@ -148,17 +147,17 @@ begin
         Port Map(   clk=>clk,    
                     rst=>rst,
                     en=>shift,
-                    input=>'0',
+                    input=>s_to_q,
                     load=>load_q,
                     data_in=>D,
                     serial_out=>q_to_a,
                     output=>quoziente
         );
-    try<=quoziente(0);
-    selettore:for i in  2*N-1 downto 0 generate
+    
+    selettore:for i in  N-1 downto 0 generate
         mux:mux_2_1
         Port Map(   x(0)=>sum_out(i),
-                    x(1)=>a_setup(i),
+                    x(1)=>'0',
                     s=>init,
                     y=>mux_to_A(i)
         );
@@ -166,34 +165,35 @@ begin
     end generate;
     
     A: shift_register
-        Generic Map(N=>2*N)
+        Generic Map(N=>N)
         Port Map(   clk=>clk,    
                     rst=>rst,
                     en=>shift,
-                    input=>q_to_a,
+                    input=>s_to_q,
                     load=>load_a,
                     data_in=>mux_to_a,
                     serial_out=>a_to_s,
                     output=>resto
         );
-    risultato<=quoziente;
+    
     S_reg: flip_flop_d
         Port Map(   D=>a_to_s,
-                    A=>clk,
+                    A=>clk ,
                     EN=>shift,
                     RST=>rst,
                     Q=>s_out
         );
     
     adder: adder_subtractor
-    Generic Map(N=>2*N)
-    Port Map(   a=>resto,
-                b=>"0000"&b_to_sum,
+    Generic Map(N=>N+1)
+    Port Map(   a=>s_out & resto,
+                b=>"0" & b_to_sum,
                 c_in=>subtract,
                 s=>sum_out
           );
 
     
        s_to_q<=not(s_out);
-       s<=s_out;  
+       s<=a_to_s;
+       risultato<=quoziente;  
 end Structural;
