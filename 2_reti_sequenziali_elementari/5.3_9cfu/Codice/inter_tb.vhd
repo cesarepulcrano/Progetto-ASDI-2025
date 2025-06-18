@@ -36,42 +36,48 @@ entity inter_tb is
 end inter_tb;
 
 architecture Behavioral of inter_tb is
-    component cronometro_intertempi is
-    Generic(N: natural:=4);
-    Port (  CLK: in std_logic;
-            RST: in std_logic;
-            set: in std_logic;
-            load_second:in std_logic_vector(5 downto 0);
-            load_minute: in std_logic_vector(5 downto 0);
-            load_hour:  in std_logic_vector(4 downto 0);
-            cont_second:    out std_logic_vector(5 downto 0);
-            cont_minute:    out std_logic_vector(5 downto 0);
-            cont_hour  :    out std_logic_vector(4 downto 0);
-            
-            stop:   in std_logic;
-            c_out       :   out std_logic
-        );
-end component;
 
-    signal output : std_logic_vector(17 downto 0);
+    component cronometro_intertempi is
+    Generic(N: natural :=4);    
+    Port (
+                clk : in STD_LOGIC;
+                rst : in STD_LOGIC;
+                start: in std_logic;
+                save: in std_logic;
+                second:    out std_logic_vector(5 downto 0);
+                minute:    out std_logic_vector(5 downto 0);
+                hour  :    out std_logic_vector(4 downto 0);
+                intertempo_second: out std_logic_vector(5 downto 0);
+                intertempo_minute: out std_logic_vector(5 downto 0);
+                intertempo_hour: out std_logic_vector(4 downto 0)
+     );
+    end component;
+
+    signal output_second : std_logic_vector(5 downto 0);
+    signal output_minute : std_logic_vector(5 downto 0);
+    signal output_hour : std_logic_vector(4 downto 0);
+    signal intertempo_second_sig: std_logic_vector(5 downto 0);
+    signal intertempo_minute_sig: std_logic_vector(5 downto 0);
+    signal intertempo_hour_sig: std_logic_vector(4 downto 0);
     signal clock:  std_logic;
     signal period: time := 10 ns;
-    signal stop: std_logic;
+    signal save: std_logic;
+    signal start: std_logic;
 begin
 
     uut:cronometro_intertempi
     Generic Map(N=>4)
     Port Map(  CLK=>clock,
             RST=>'0',
-            set=>'0',
-            load_second=>(others=>'0'),
-            load_minute=>(others=>'0'),
-            load_hour=>(others=>'0'),
-            cont_second=>output(5 downto 0),
-            cont_minute=>   output(11 downto 6),
-            cont_hour  =>   output(16 downto 12),
+            start=>start,
+            save=>save,
+            second=>   output_second,
+            minute=>   output_minute,
+            hour  =>   output_hour,
+            intertempo_second =>intertempo_second_sig,
+            intertempo_minute =>intertempo_minute_sig,
+            intertempo_hour   =>intertempo_hour_sig
             
-            stop=>clock
         );
         
     cl:process
@@ -85,72 +91,12 @@ begin
     stim:process
     begin
         wait for 10 ns;
-        stop<='1';
---        wait for 70 ns;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
-        
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
-        
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
-        
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
---        stop<='1';
---        wait for period;
---        stop<='0';
---        wait for period;
-        
+        start<='1';
+        wait for 10 ns;
+        save<='1';
+        wait for 100 ns;
+        save<='0';
+        start<='0';
         
                
         wait;

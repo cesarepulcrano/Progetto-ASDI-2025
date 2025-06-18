@@ -51,37 +51,42 @@ architecture Behavioral of timing_tb is
     signal input_test    :   std_logic_vector(3 downto 0) := (others => 'U');
     signal output_test   :   std_logic_vector(3 downto 0) := (others => 'U');
     signal load_test    :   std_logic;
-    signal clock : std_logic;
+    signal rst_signal   :   std_logic;
+    --signal clock : std_logic;
     signal period: time := 10 ns;
 begin
     
     uut : timing -- unit under test
         Port map(
                 clk     =>clock,
-                rst     =>rst,
+                rst     =>rst_signal,
                 load    =>load_test,
                 input   =>input_test,
                 output  =>output_test
         );
     
-    cloc:process
-    begin
-        clock<='0';
-        wait for period/2;
-        clock<='1';
-        wait for period/2;
-    end process;
+--    cloc:process
+--    begin
+--        clock<='0';
+--        wait for period/2;
+--        clock<='1';
+--        wait for period/2;
+--    end process;
         
     stim_proc : process
     begin
     
     wait for 10 ns;
-    load<='1';
-    for i in 0 to 15 loop
+    load_test<='1';
         input_test <= std_logic_vector(to_unsigned(i, 4)); -- Conversione da decimale a binario
         wait for 50 ns;
-        load<='0';
-    end loop;
+        load_test<='0';
+--    for i in 0 to 15 loop
+--        load_test<='1';
+--        input_test <= std_logic_vector(to_unsigned(i, 4)); -- Conversione da decimale a binario
+--        wait for 50 ns;
+--        load_test<='0';
+--    end loop;
     
     assert output_test = "0000"
     report "error"

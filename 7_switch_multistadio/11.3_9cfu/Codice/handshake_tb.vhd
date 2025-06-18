@@ -67,7 +67,7 @@ begin
                 invia_a        =>invia_a,
                 invia_b        =>invia_b,
                 dato_ricevuto_a=>datoa,
-                dato_ricevuto_b=>datoa
+                dato_ricevuto_b=>datob
          );
     
     cprocess:process
@@ -80,11 +80,21 @@ begin
     
     stim:process
     begin
-        invia_b<='0';
-        invia_a<='1';
         wait for 10 ns;
-        invia_a<='0';
+        rst<='1';
+        wait for 10 ns;
+        rst<='0';
         invia_b<='1';
+        invia_a<='0';
+        wait for 100 ns;
+        invia_a<='0';
+        invia_b<='0';
+        wait for 10 ns;
+        invia_a<='1';
+        invia_b<='0';
+        wait for 100 ns;
+        invia_a<='0';
+        invia_b<='0';
         wait;
     end process;
     

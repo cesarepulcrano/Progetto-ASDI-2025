@@ -31,28 +31,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity flip_flop_d is
-    Port (  D   : in std_logic;
-            A   : in std_logic;
-            EN  : in std_logic;
-            RST : in std_logic;
-            Q   : out std_logic
+entity mux_2_1 is
+    Port (  x : in std_logic_vector(1 downto 0);
+            s : in std_logic;
+            y : out std_logic
     );
-end flip_flop_d;
+end mux_2_1;
 
-architecture Behavioral of flip_flop_d is
+architecture Dataflow of mux_2_1 is
 
 begin
 
-    process(A) -- Sul fronte di salita del segnale di abilitazione
-    begin
-        if(A'event and A='1') then
-            if(RST='1') then
-                Q <= '0';
-            elsif(EN='1') then
-                Q <= D;
-            end if;
-        end if;
-    end process;
+    y <= (x(0) AND (NOT s)) OR (x(1) AND s);
 
-end Behavioral;
+end Dataflow;

@@ -135,19 +135,34 @@ begin
                                     
     net:omega_network_prio_fissa    
         Port Map(                   
-                    message0        =>"10" & a_control_out,
-                    message1        =>"11" & a_data_out,
-                    message2        =>"00" & b_control_out,
-                    message3        =>"01" & b_data_out,   
+                    message0        =>"00" & a_control_out,
+                    message1        =>"01" & a_data_out,
+                    message2        =>"10" & b_control_out,
+                    message3        =>"11" & b_data_out,   
                     r0              =>a_sel(0),
                     r1              =>a_sel(1),
                     r2              =>b_sel(0),
                     r3              =>b_sel(1),
-                    y0              =>a_control_in,
-                    y1              =>a_data_in,
-                    y2              =>b_control_in,
-                    y3              =>b_data_in
+                    y0              =>b_control_in,
+                    y1              =>b_data_in,
+                    y2              =>a_control_in,
+                    y3              =>a_data_in
         
         );
-
+--net:omega_network_prio_fissa    
+--        Port Map(                   
+--                    message0        =>"10" & a_control_out,
+--                    message1        =>"11" & a_data_out,
+--                    message2        =>"00" & b_control_out,
+--                    message3        =>"01" & b_data_out,   
+--                    r0              =>a_sel(0),
+--                    r1              =>a_sel(1),
+--                    r2              =>b_sel(0),
+--                    r3              =>b_sel(1),
+--                    y0              =>a_control_in,
+--                    y1              =>a_data_in,
+--                    y2              =>b_control_in,
+--                    y3              =>b_data_in
+        
+--        );
 end Structural;

@@ -5,26 +5,4 @@ Running: /tools/Xilinx/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.math_real
-Compiling architecture behavioral of entity xil_defaultlib.contatore_mod_N [\contatore_mod_N(n=8)\]
-Compiling architecture behavioral of entity xil_defaultlib.ROM_A [\ROM_A(m=4)\]
-Compiling architecture structural of entity xil_defaultlib.uo_a [uo_a_default]
-Compiling architecture behavioral of entity xil_defaultlib.uc_a [uc_a_default]
-Compiling architecture structural of entity xil_defaultlib.A [a_default]
-Compiling architecture behavioral of entity xil_defaultlib.reg [\reg(n=4)\]
-Compiling architecture dataflow of entity xil_defaultlib.generazione_propagazione [generazione_propagazione_default]
-Compiling architecture dataflow of entity xil_defaultlib.carry_look_ahead [carry_look_ahead_default]
-Compiling architecture structural of entity xil_defaultlib.sommatore_cla [sommatore_cla_default]
-Compiling architecture structural of entity xil_defaultlib.uo_b [\uo_b(3,0)\]
-Compiling architecture behavioral of entity xil_defaultlib.uc_b [uc_b_default]
-Compiling architecture structural of entity xil_defaultlib.B [b_default]
-Compiling architecture structural of entity xil_defaultlib.system [system_default]
-Compiling architecture behavioral of entity xil_defaultlib.sys_tb
-Built simulation snapshot sys_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

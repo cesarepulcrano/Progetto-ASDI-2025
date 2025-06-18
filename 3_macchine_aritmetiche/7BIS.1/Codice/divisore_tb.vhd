@@ -45,7 +45,8 @@ architecture Behavioral of divisore_tb is
                     start       :   in      std_logic;
                     D           :   in      std_logic_vector(   N-1 downto  0   );
                     V           :   in      std_logic_vector(   N-1 downto  0   );
-                    risultato   :   out      std_logic_vector(   N-1 downto  0   )
+                    risultato   :   out     std_logic_vector(   N-1 downto  0   );
+                    resto       :   out     std_logic_vector(   N-1 downto  0   )
                  );
     end component;
     
@@ -55,6 +56,7 @@ architecture Behavioral of divisore_tb is
     signal x: std_logic_vector(N-1 downto 0):=(others=>'0');
     signal y: std_logic_vector(N-1 downto 0):=(others=>'0');         
     signal output: std_logic_vector(N-1 downto 0);
+    signal routput: std_logic_vector(N-1 downto 0);
     signal CLOCK_PERIOD : time :=10 ns;
 begin
     
@@ -65,7 +67,8 @@ begin
                     start=>enable,
                     D=>x,
                     V=>y,
-                    risultato=>output 
+                    risultato=>output,
+                    resto=>routput 
          );
     
     cwave:process
@@ -81,12 +84,12 @@ begin
         rst<='0';
         wait for 10 ns;
         rst<='0';
-        x<="0111";
+        x<="1100";
         y<="0010";
         enable<='1';
-        wait for 10 ns;
+        wait for 100 ns;
+        
         enable<='0';
-        rst<='0';
         wait;
     end process;
     

@@ -54,60 +54,61 @@ architecture Behavioral of B is
     type state is (idle,send_req,wait_ack,send_data,send_ack,ricevi);
     signal stato_corrente : state := idle;
     signal stato_prossimo : state;
-    signal temp: std_logic_vector(1 downto 0);
+
 begin
     
     comb:process(stato_corrente,invia,controllo_input,dato_in)
     begin
+
         case stato_corrente is
         when idle =>
             selezione_output<="00";
             if(invia='1') then
                 stato_prossimo<=send_req;
             elsif(controllo_input="01") then
-                stato_prossimo<=send_ack;
+                stato_prossimo<=ricevi;
             else
                 stato_prossimo<=idle;
             end if;
         when send_req =>
             selezione_output(0)<='1';
             controllo_output<="01";
-            stato_prossimo<=wait_ack;
-        when wait_ack =>
-            selezione_output(0)<='0';    
-            if(controllo_input="10") then
-                stato_prossimo<=send_data;
-            else
-                stato_prossimo<=wait_ack;
-            end if;                                 
+            stato_prossimo<=send_data;
+                                
         when send_data =>
             selezione_output(0)<='0';
             selezione_output(1)<='1';
             dato_out<="11";
-            stato_prossimo<=idle;
+            stato_prossimo<=wait_ack;
+        when wait_ack =>
+            selezione_output(0)<='0'; 
+            selezione_output(1)<='0';   
+            if(controllo_input="10") then
+                stato_prossimo<=idle;
+            else
+                stato_prossimo<=wait_ack;
+            end if;             
         when send_ack =>
             selezione_output(0)<='1';
             controllo_output<="10";
-            stato_prossimo<=ricevi;
+            stato_prossimo<=idle;
         when ricevi =>  
             selezione_output(0)<='0';
-            temp<=dato_in;
-            stato_prossimo<=idle;
+            dato_ricevuto<=dato_in;
+            stato_prossimo<=send_ack;
         end case;                    
-        
     end process;
     
+
     mem:process(clk)
     begin
         if(rising_edge(clk)) then
             if(rst='1') then
                 stato_corrente<=idle;
-            else
-                stato_corrente<=stato_prossimo; 
+            else 
+                stato_corrente<=stato_prossimo;
             end if;       
         end if;
     end process;
-
-    dato_ricevuto<=temp;
 
 end Behavioral;

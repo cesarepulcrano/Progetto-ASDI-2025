@@ -42,7 +42,9 @@ entity cronometro_intertempi is
                 second:    out std_logic_vector(5 downto 0);
                 minute:    out std_logic_vector(5 downto 0);
                 hour  :    out std_logic_vector(4 downto 0);
-                intertempi : out std_logic_vector(16 downto 0)
+                intertempo_second:  out std_logic_vector(5 downto 0);
+                intertempo_minute: out  std_logic_vector(5 downto 0);
+                intertempo_hour: out    std_logic_vector(4 downto 0)
      );
 end cronometro_intertempi;
 
@@ -86,6 +88,7 @@ architecture Structural of cronometro_intertempi is
     signal sec_sig:std_logic_vector(6 downto 0);
     signal min_sig:std_logic_vector(6 downto 0);
     signal hour_sig:std_logic_vector(5 downto 0);
+    signal intertempi: std_logic_vector(16 downto 0);
     
 begin
     
@@ -118,6 +121,7 @@ begin
                 mem_out              =>intertempi
 
             );
-    
-
+    intertempo_second<=intertempi(5 downto 0);
+    intertempo_minute<=intertempi(11 downto 6);
+    intertempo_hour<=intertempi(16 downto 12);
 end Structural;
